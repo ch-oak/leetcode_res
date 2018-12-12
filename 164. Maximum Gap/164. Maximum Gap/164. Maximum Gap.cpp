@@ -10,8 +10,55 @@
 #include <set>
 
 using namespace std;
+class max_min {
+public:
+	max_min() {
+		max = INT_MIN;
+		min = INT_MAX;
+	}
+	int max;
+	int min;
+	bool empty() {
+		if (max == INT_MIN && min == INT_MAX)
+			return true;
+		else
+			return false;
+	}
+};
 int main()
 {
+	//freopen("in.txt", "r", stdin);
+	//int temp;
+	//vector<int> nums;
+	//while (cin >> temp)
+	//	nums.push_back(temp);
+	//int n = nums.size();
+	//if (n < 2)
+	//	return 0;
+	//if (n == 2)
+	//	return abs(nums[0] - nums[1]);
+	//int min_ele = *min_element(nums.begin(), nums.end());
+	//int max_ele = *max_element(nums.begin(), nums.end());
+	//int bucket_size = ceil((max_ele - min_ele) / (n - 1));
+	//if (bucket_size == 0)
+	//	return 0;
+	//vector<set<int>> buckets(n+1);
+	//for (int i = 0; i < n; i++) {
+	//	int num = floor((nums[i] - min_ele) / bucket_size);
+	//	buckets[num].insert(nums[i]);
+	//}
+	//int res = INT_MIN;
+	//auto pre = buckets[0];
+	//for (int i = 1; i < n-1;i++) {
+	//	if (!buckets[i].empty()) {
+	//		int temp = *buckets[i].begin() - *(--pre.end());
+	//		if (res < temp)
+	//			res = temp;
+	//		pre = buckets[i];
+	//	}
+	//}
+	//cout << res;
+
 	freopen("in.txt", "r", stdin);
 	int temp;
 	vector<int> nums;
@@ -20,20 +67,27 @@ int main()
 	int n = nums.size();
 	if (n < 2)
 		return 0;
-	int min_ele = *min_element(nums.begin(), nums.end());
-	int max_ele = *max_element(nums.begin(), nums.end());
-	int bucket_size = floor((max_ele - min_ele) / (n - 1))-1;
-	int bucket_num = ceil((max_ele - min_ele) / bucket_size) + 1;
-	vector<set<int>> buckets(bucket_num);
+	if (n == 2)
+		return abs(nums[0] - nums[1]);
+	double min_ele = *min_element(nums.begin(), nums.end());
+	double max_ele = *max_element(nums.begin(), nums.end());
+	int bucket_size = ceil((max_ele - min_ele) / (n - 1));
+	if (bucket_size == 0)
+		return 0;
+	int bucket_num = ceil((max_ele - min_ele) / bucket_size);
+	vector<max_min> buckets(bucket_num+1);
 	for (int i = 0; i < n; i++) {
 		int num = floor((nums[i] - min_ele) / bucket_size);
-		buckets[num].insert(num);
+		if (nums[i] > buckets[num].max)
+			buckets[num].max = nums[i];
+		if (nums[i] < buckets[num].min)
+			buckets[num].min = nums[i];
 	}
 	int res = INT_MIN;
 	auto pre = buckets[0];
-	for (int i = 1; i < buckets.size();i++) {
+	for (int i = 1; i < bucket_num + 1; i++) {
 		if (!buckets[i].empty()) {
-			int temp = *buckets[i].begin() - *(--pre.end());
+			int temp = buckets[i].min - pre.max;
 			if (res < temp)
 				res = temp;
 			pre = buckets[i];
