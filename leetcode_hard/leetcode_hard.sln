@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "57. Insert Interval", "57. Insert Interval\57. Insert Interval.vcxproj", "{8EA5E0F9-C09B-4A5F-905A-44D32E020A73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EA5E0F9-C09B-4A5F-905A-44D32E020A73}.Debug|x64.ActiveCfg = Debug|x64
+		{8EA5E0F9-C09B-4A5F-905A-44D32E020A73}.Debug|x64.Build.0 = Debug|x64
+		{8EA5E0F9-C09B-4A5F-905A-44D32E020A73}.Debug|x86.ActiveCfg = Debug|Win32
+		{8EA5E0F9-C09B-4A5F-905A-44D32E020A73}.Debug|x86.Build.0 = Debug|Win32
+		{8EA5E0F9-C09B-4A5F-905A-44D32E020A73}.Release|x64.ActiveCfg = Release|x64
+		{8EA5E0F9-C09B-4A5F-905A-44D32E020A73}.Release|x64.Build.0 = Release|x64
+		{8EA5E0F9-C09B-4A5F-905A-44D32E020A73}.Release|x86.ActiveCfg = Release|Win32
+		{8EA5E0F9-C09B-4A5F-905A-44D32E020A73}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97A952BA-B984-4196-B86A-2B95938F529D}
+	EndGlobalSection
+EndGlobal
