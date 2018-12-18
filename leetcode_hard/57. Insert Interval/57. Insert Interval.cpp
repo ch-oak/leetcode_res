@@ -7,6 +7,13 @@
 
 using namespace std;
 
+/**
+*思路：先将newInterval按照start从小到大的顺序插入intervals,
+*起先的思路是将newInterval插入在一个比他小的Interval前面，但是没考虑newInterval比其他Interval都大的情况
+*解决重叠的过程需要将重合的Interval合并，考虑两种情况pre完全包含next，pre部分包含next
+*但是速度过慢超越1.18用户
+*/
+
 struct Interval {
 	int start;
 	int end;
@@ -17,14 +24,52 @@ struct Interval {
 class Solution {
 public:
 	vector<Interval> insert(vector<Interval>& intervals, Interval newInterval) {
+		if (intervals.empty()) {
+			intervals.push_back(newInterval);
+			return intervals;
+		}
+		int start = newInterval.start;
+		int end = newInterval.end;
+		int len = intervals.size();
+		for (auto it = intervals.begin(); it != intervals.end(); it++) {
+			if (start <= (*it).start) {
+				intervals.insert(it, newInterval);
+				break;
+			}
+				
+		}
+		if (intervals.size() == len)
+			intervals.push_back(newInterval);
 
+		auto pre = intervals.begin();
+		for (auto it = ++intervals.begin(); it != intervals.end(); it++) {
+			if ((*pre).end >= (*it).start&&(*pre).end<=(*it).end) {//pre包含了部分it
+				(*pre).end = (*it).end;
+				intervals.erase(it);
+				it = pre;
+			}
+			else if ((*pre).end >= (*it).start && (*pre).end > (*it).end) {//pre完全包含it
+				intervals.erase(it);
+				it = pre;
+			}
+			else {
+				pre++;
+			}
+		}
+		return intervals;
 	}
 };
 
 int main()
 {
-	
-    std::cout << "Hello World!\n"; 
+	vector<Interval> intervals = { Interval(1,5)};
+	Interval newInterval(2, 7);
+	Solution s;
+	vector<Interval> res = s.insert(intervals, newInterval);
+	for (auto e : res) {
+		cout << "[" << e.start << "," << e.end << "]";
+	}
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
