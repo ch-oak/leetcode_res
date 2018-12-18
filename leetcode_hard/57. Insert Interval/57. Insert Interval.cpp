@@ -71,6 +71,9 @@ struct Interval {
 *如果有重叠，更新newInterval的star和end,继续遍历
 *最后压入newInterval(如果程序没结束）
 *时间还是只到31%，应该还是push_back的原因
+*改善，用reserve函数预留空间，left和right代替newInterval,无变化还是31%
+*用emplace_back代替push_back,瞬间速度彪升到99%，诡异的是多提交两次速度又降下来了
+*思考：
 */
 class Solution {
 public:
@@ -84,27 +87,30 @@ public:
 		vector<Interval> ret;
 		ret.reserve(intervals.size() + 1);
 		int len = intervals.size();
+		int left = newInterval.start;
+		int right = newInterval.end;
+
 		for (int i = 0; i < len; i++) {
 			//无重复
 			//在下一个之前
-			if (newInterval.end < intervals[i].start) {
-				ret.push_back(newInterval);
+			if (right < intervals[i].start) {
+				ret.emplace_back(left, right);
 				for (; i < len; i++)
-					ret.push_back(intervals[i]);
+					ret.emplace_back(intervals[i].start, intervals[i].end);
 				return ret;
 			}
 			//在下一个之后
-			else if (newInterval.start > intervals[i].end) {
-				ret.push_back(intervals[i]);
+			else if (left > intervals[i].end) {
+				ret.emplace_back(intervals[i].start, intervals[i].end);
 			}
 			//有重叠
 			else {
-				newInterval.start = min(newInterval.start, intervals[i].start);
-				newInterval.end = max(newInterval.end, intervals[i].end);
+				left = min(left, intervals[i].start);
+				right = max(right, intervals[i].end);
 			}
 
 		}
-		ret.push_back(newInterval);
+		ret.emplace_back(left, right);
 		return ret;
 	}
 
