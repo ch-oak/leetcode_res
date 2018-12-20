@@ -5,11 +5,49 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <string>
+
+
 using namespace std;
+
+/**
+*参考https://leetcode.com/problems/zigzag-conversion/discuss/3435/If-you-are-confused-with-zigzag-patterncome-and-see!的说明和代码
+*每一行字符下标的变化是2numRows-2i-2和2i,需要考虑s的长度比numRows小、s为空、numRows为1的情况，直接返回s.
+*/
 class Solution {
 public:
 	string convert(string s, int numRows) {
-
+		int len = s.size();
+		string res(len,' ');
+		int pos = -1;
+		for (int i = 0; i < numRows; i++) {
+			pos++;
+			if (i < len)
+				res[pos] = s[i];
+			int step1 = 2 * numRows - 2 - 2 * i;
+			int step2 = 2 * i;
+			int s_pos = i;
+			while (1) {
+				s_pos += step1;
+				if (step1){
+					if (s_pos < len) {
+						pos++;
+						res[pos] = s[s_pos];				
+					}
+					else
+						break;
+				}
+				s_pos += step2;
+				if (step2) {
+					if (s_pos < len) {
+						pos++;
+						res[pos] = s[s_pos];		
+					}
+					else
+						break;
+				}
+			}
+		}
+		return res;
 	}
 };
 int main()
@@ -17,8 +55,9 @@ int main()
 	freopen("in.txt", "r", stdin);
 	string s;
 	int numRows;
+	Solution sol;
 	while (cin >> s >> numRows) {
-		cout << s << " " << numRows << endl;
+		cout << sol.convert(s, numRows) << endl;
 	}
 }
 
