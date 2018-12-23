@@ -1,0 +1,5 @@
+aa a
+aa a*
+ab .*
+aab c*a*b
+mississippi mis*is*p*.
