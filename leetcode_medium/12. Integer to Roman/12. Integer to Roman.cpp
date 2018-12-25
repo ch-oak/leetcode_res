@@ -13,6 +13,7 @@ using namespace std;
 
 /**
 *最暴力的方法，最大值是3999，把每一位的值都表示出来，一位一位的加上去，不过最后顺序是反的，需要颠倒一下顺序
+*
 */
 class Solution {
 public:
