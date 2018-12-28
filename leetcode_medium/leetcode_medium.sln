@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11. Container With Most Wat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12. Integer to Roman", "12. Integer to Roman\12. Integer to Roman.vcxproj", "{746762B1-C1FE-4F75-9121-7F2E399B09EE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15. 3Sum", "15. 3Sum\15. 3Sum.vcxproj", "{0184D149-CB29-4AD2-B986-22B41E8247FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{746762B1-C1FE-4F75-9121-7F2E399B09EE}.Release|x64.Build.0 = Release|x64
 		{746762B1-C1FE-4F75-9121-7F2E399B09EE}.Release|x86.ActiveCfg = Release|Win32
 		{746762B1-C1FE-4F75-9121-7F2E399B09EE}.Release|x86.Build.0 = Release|Win32
+		{0184D149-CB29-4AD2-B986-22B41E8247FE}.Debug|x64.ActiveCfg = Debug|x64
+		{0184D149-CB29-4AD2-B986-22B41E8247FE}.Debug|x64.Build.0 = Debug|x64
+		{0184D149-CB29-4AD2-B986-22B41E8247FE}.Debug|x86.ActiveCfg = Debug|Win32
+		{0184D149-CB29-4AD2-B986-22B41E8247FE}.Debug|x86.Build.0 = Debug|Win32
+		{0184D149-CB29-4AD2-B986-22B41E8247FE}.Release|x64.ActiveCfg = Release|x64
+		{0184D149-CB29-4AD2-B986-22B41E8247FE}.Release|x64.Build.0 = Release|x64
+		{0184D149-CB29-4AD2-B986-22B41E8247FE}.Release|x86.ActiveCfg = Release|Win32
+		{0184D149-CB29-4AD2-B986-22B41E8247FE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
