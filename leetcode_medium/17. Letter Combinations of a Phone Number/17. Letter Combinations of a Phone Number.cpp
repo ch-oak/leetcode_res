@@ -1,5 +1,5 @@
 ﻿// 17. Letter Combinations of a Phone Number.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//每个数字代表某些字母中的一个，给出串数字，找出所有可能性
+//数字2到9中每个数字可以代表若干个字母，然后给一串数字，求出所有可能的组合
 
 #include "pch.h"
 #define _CRT_SECURE_NO_WARNINGS
@@ -13,7 +13,7 @@ using namespace std;
 /**
 *一个比较简单的方法，绘制发散图可以发现，有几个数字就有几层，每一层都是按照一定规律重复的在排列对应层数字所代表的字母
 *重复的次数是该层之后除最后一层的所有层数字代表字母数的乘积
-*直接全部排出来就是了。直观的想法。。。。。。
+*直接全部排出来就是了。直观的想法（典型没学过算法的人写的解答⊙﹏⊙。
 *复杂度应该是O(N）吧，时间主要浪费在map上了。
 */
 
@@ -51,9 +51,25 @@ public:
 		return res;
 	}
 };
+class Solution {
+public:
+	vector<string> letterCombinations(string digits) {
+		if (digits.empty())
+			return {};
+		
+	}
+
+private:
+	void dfs() {
+
+	}
+};
 
 int main()
 {
+	string str = "test";
+	for (int i = 0; i < str.size(); i++)
+		cout << string(2, str[i]) << endl;
 	freopen("in.txt", "r", stdin);
 	string digits;
 	Solution s;
