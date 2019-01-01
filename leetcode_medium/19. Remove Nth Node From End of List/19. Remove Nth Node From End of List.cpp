@@ -23,6 +23,8 @@ public:
 		ListNode* pre = head;
 		int len = 0;
 		while (cur->next) {
+			if (len > 0)
+				pre = pre->next;
 			len++;
 			cur = cur->next;
 		}
