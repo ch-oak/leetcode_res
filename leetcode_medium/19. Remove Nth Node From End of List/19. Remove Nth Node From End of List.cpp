@@ -1,5 +1,5 @@
 ﻿// 19. Remove Nth Node From End of List.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+//返回一个链表中倒数第n个元素
 
 #include "pch.h"
 #define _CRT_SECURE_NO_WARNINGS
@@ -14,25 +14,73 @@ struct ListNode {
      ListNode *next;
      ListNode(int x) : val(x), next(NULL) {}
   };
- 
-class Solution {
+/**
+*本题中的链表头结点也存储了元素，一个简单的思路是倒数第n（n>=1&&n<=len)个节点就是正数第len+1-n个节点（1到len)，
+*删除该节点即用下一个节点将它覆盖，cur->val = cur->next->val;cur->next = cur->next->next;
+*有两种特殊的情况①len==1直接返回空指针②删除最后一个元素cur = NULL;
+*/
+class Solution1 {
 public:
 	ListNode* removeNthFromEnd(ListNode* head, int n) {
-		int len = 0;
+
+
 		ListNode* cur = head;
 		ListNode* pre = head;
-		int len = 0;
+		ListNode* last = head;
+		int len = 1;
 		while (cur->next) {
-			if (len > 0)
+			if (len > 1)
 				pre = pre->next;
 			len++;
 			cur = cur->next;
 		}
 		int pos = len - n;
+		if (n == 1) {
+			if (len == 1)
+				return head->next;
+			pre->next = NULL;
+			return head;
+		}
+		else
+			while (pos--)
+				last = last->next;
+		last->val = last->next->val;
+		last->next = last->next->next;
 		return head;
 	}
 };
 
+/**
+*另外一种思路，设置两个指针，一个指针先跑n步，另一个指针再开始跑，找到要删除的节点前一个节点（防止删除节点为最后一个
+*节点时无法用下一个节点覆盖要删除的节点），另外还需要考虑只有一个节点的情况，要删除的节点为头节点的情况。
+*/
+class Solution {
+public:
+	ListNode* removeNthFromEnd(ListNode* head, int n) {
+		if (head->next == NULL)//只有一个节点
+			return NULL;
+		ListNode* res = head;
+		ListNode* pre_des = head;
+		int n_copy = n;
+		int len = 1;
+		while (head->next) {
+			len++;
+			head = head->next;
+			if (--n_copy < 0)
+				pre_des = pre_des->next;
+		}
+		if (n == 1)//删除尾节点
+			pre_des->next = NULL;
+		else if (n == len)//删除头节点
+			return res->next;
+		else {
+			ListNode* des = pre_des->next;
+			des->val = des->next->val;
+			des->next = des->next->next;
+		}
+		return res;
+	}
+};
 void insert_node(ListNode* head, int val) {
 	ListNode* new_node = new ListNode(val);
 	new_node->next = head->next;

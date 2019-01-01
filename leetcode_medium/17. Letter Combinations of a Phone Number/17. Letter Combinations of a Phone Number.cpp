@@ -13,11 +13,11 @@ using namespace std;
 /**
 *一个比较简单的方法，绘制发散图可以发现，有几个数字就有几层，每一层都是按照一定规律重复的在排列对应层数字所代表的字母
 *重复的次数是该层之后除最后一层的所有层数字代表字母数的乘积
-*直接全部排出来就是了。直观的想法（典型没学过算法的人写的解答⊙﹏⊙。
+*直接全部排出来就是了。直观的想法（典型没学过算法的人写的解答⊙﹏⊙)。
 *复杂度应该是O(N）吧，时间主要浪费在map上了。
 */
 
-class Solution {
+class Solution1 {
 public:
 	vector<string> letterCombinations(string digits) {
 		if (digits.empty())
@@ -51,25 +51,35 @@ public:
 		return res;
 	}
 };
+/**
+*参考:https://www.cnblogs.com/grandyang/p/4452220.html
+*使用递归的方法，类似深度优先搜索，当搜索到终点后把这条路径上字符串加进来
+*/
 class Solution {
 public:
 	vector<string> letterCombinations(string digits) {
 		if (digits.empty())
 			return {};
-		
+		string dial[] = { "","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz" };
+		vector<string> res;
+		dfs(dial, digits, res, 0, "");
+		return res;
 	}
 
 private:
-	void dfs() {
-
+	void dfs(string dial[],string &digits,vector<string> &res,int layer,string temp) {
+		if (layer == digits.size()) {
+			res.push_back(temp);
+			return;
+		}
+		for (int i = 0; i < dial[digits[layer]-'0'].size(); i++) {
+			dfs(dial, digits, res, layer + 1, temp + dial[digits[layer] - '0'][i]);
+		}
 	}
 };
 
 int main()
 {
-	string str = "test";
-	for (int i = 0; i < str.size(); i++)
-		cout << string(2, str[i]) << endl;
 	freopen("in.txt", "r", stdin);
 	string digits;
 	Solution s;
