@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17. Letter Combinations of 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18. 4Sum", "18. 4Sum\18. 4Sum.vcxproj", "{EA7CC08A-451D-4045-8CD3-3BFD82B56203}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19. Remove Nth Node From End of List", "19. Remove Nth Node From End of List\19. Remove Nth Node From End of List.vcxproj", "{AE170E95-1257-412D-ACE4-D7AB71A257BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{EA7CC08A-451D-4045-8CD3-3BFD82B56203}.Release|x64.Build.0 = Release|x64
 		{EA7CC08A-451D-4045-8CD3-3BFD82B56203}.Release|x86.ActiveCfg = Release|Win32
 		{EA7CC08A-451D-4045-8CD3-3BFD82B56203}.Release|x86.Build.0 = Release|Win32
+		{AE170E95-1257-412D-ACE4-D7AB71A257BD}.Debug|x64.ActiveCfg = Debug|x64
+		{AE170E95-1257-412D-ACE4-D7AB71A257BD}.Debug|x64.Build.0 = Debug|x64
+		{AE170E95-1257-412D-ACE4-D7AB71A257BD}.Debug|x86.ActiveCfg = Debug|Win32
+		{AE170E95-1257-412D-ACE4-D7AB71A257BD}.Debug|x86.Build.0 = Debug|Win32
+		{AE170E95-1257-412D-ACE4-D7AB71A257BD}.Release|x64.ActiveCfg = Release|x64
+		{AE170E95-1257-412D-ACE4-D7AB71A257BD}.Release|x64.Build.0 = Release|x64
+		{AE170E95-1257-412D-ACE4-D7AB71A257BD}.Release|x86.ActiveCfg = Release|Win32
+		{AE170E95-1257-412D-ACE4-D7AB71A257BD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
