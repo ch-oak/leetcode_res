@@ -15,7 +15,7 @@ using namespace std;
 *最后判断栈是否为空，为空则正确，不为空则错误。
 */
 
-class Solution {
+class Solution1 {
 public:
 	bool isValid(string s) {
 		map<char, char> bracket = { {')','('},{']','['},{'}','{'} };
@@ -31,6 +31,33 @@ public:
 
 	}
 };
+
+/**
+*参考：https://www.cnblogs.com/grandyang/p/4424587.html
+*方法2，中途出现不配对的情况立马返回false
+*/
+class Solution {
+public:
+	bool isValid(string s) {
+		map<char, char> bracket = { {')','('},{']','['},{'}','{'} };
+		stack<char> sta;
+		int len = s.size();
+		for (int i = 0; i < len; i++) {
+			if (bracket.find(s[i]) == bracket.end())
+				sta.push(s[i]);//左括号直接压入
+			else {
+				if (sta.empty())//右括号，栈为空，错误
+					return false;
+				else if (bracket[s[i]] != sta.top())//右括号，不配对，错误
+					return false;
+				sta.pop();//配对则删除栈顶元素
+			}
+		}
+		return sta.empty();
+
+	}
+};
+
 
 int main()
 {
