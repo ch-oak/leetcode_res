@@ -5,6 +5,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
+#include <queue>
 using namespace std;
 
 struct ListNode {
@@ -57,7 +58,7 @@ private:
 *参考：https://www.cnblogs.com/skysand/p/4300711.html
 *方法2：两项两项的合并，快了很多，比60%快
 */
-class Solution {
+class Solution2 {
 public:
 	ListNode* mergeKLists(vector<ListNode*> lists) {
 		if (lists.empty())
@@ -98,8 +99,37 @@ private:
 		return res;
 	}
 };
+
+/**
+*参考：https://www.cnblogs.com/grandyang/p/4606710.html
+*方法3：使用最小堆，将一层节点放入优先队列中，这里说一下，优先队列就相当于最小堆
+*/
+class Solution {
+public:
+	ListNode* mergeKLists(vector<ListNode*> lists) {
+		auto cmp = [](ListNode* l1, ListNode*l2) {return l1->val > l2->val; };
+		priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> q(cmp);
+		for (int i = 0; i < lists.size(); i++) {
+			if (lists[i])
+				q.push(lists[i]);
+		}
+		ListNode *head = NULL, *pre = NULL, *tmp = NULL;
+		while (!q.empty()) {
+			tmp = q.top();
+			q.pop();
+			if (!pre) head = tmp;
+			else pre->next = tmp;
+			pre = tmp;
+			if (tmp->next) q.push(tmp->next);
+		}
+		return head;
+	}
+};
 int main()
 {
+	int* p = NULL;
+	if (!p)
+		cout << "test" << endl;
     std::cout << "Hello World!\n"; 
 }
 
