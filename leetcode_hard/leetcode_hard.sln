@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "57. Insert Interval", "57. 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10. Regular Expression Matching", "10. Regular Expression Matching\10. Regular Expression Matching.vcxproj", "{8E42CECF-C5D3-4388-A9F8-435258E2FA28}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "23. Merge k Sorted Lists", "23. Merge k Sorted Lists\23. Merge k Sorted Lists.vcxproj", "{38639374-F9DE-4C54-9F53-976E243C9EC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{8E42CECF-C5D3-4388-A9F8-435258E2FA28}.Release|x64.Build.0 = Release|x64
 		{8E42CECF-C5D3-4388-A9F8-435258E2FA28}.Release|x86.ActiveCfg = Release|Win32
 		{8E42CECF-C5D3-4388-A9F8-435258E2FA28}.Release|x86.Build.0 = Release|Win32
+		{38639374-F9DE-4C54-9F53-976E243C9EC2}.Debug|x64.ActiveCfg = Debug|x64
+		{38639374-F9DE-4C54-9F53-976E243C9EC2}.Debug|x64.Build.0 = Debug|x64
+		{38639374-F9DE-4C54-9F53-976E243C9EC2}.Debug|x86.ActiveCfg = Debug|Win32
+		{38639374-F9DE-4C54-9F53-976E243C9EC2}.Debug|x86.Build.0 = Debug|Win32
+		{38639374-F9DE-4C54-9F53-976E243C9EC2}.Release|x64.ActiveCfg = Release|x64
+		{38639374-F9DE-4C54-9F53-976E243C9EC2}.Release|x64.Build.0 = Release|x64
+		{38639374-F9DE-4C54-9F53-976E243C9EC2}.Release|x86.ActiveCfg = Release|Win32
+		{38639374-F9DE-4C54-9F53-976E243C9EC2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
