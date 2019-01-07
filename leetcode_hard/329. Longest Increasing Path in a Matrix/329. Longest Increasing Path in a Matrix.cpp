@@ -13,6 +13,8 @@ using namespace std;
 
 /**
 *使用深度优先搜索加记忆的动态规划
+*pull（拉取）：提取远程库，合并到本地
+*fetch(提取）：提取远程库，不合并
 *参考：https://leetcode.com/problems/longest-increasing-path-in-a-matrix/discuss/78317/C%2B%2B-DP-DFS-solution-sharing
 */
 
