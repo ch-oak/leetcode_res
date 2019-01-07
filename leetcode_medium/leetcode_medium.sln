@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19. Remove Nth Node From En
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "22. Generate Parentheses", "22. Generate Parentheses\22. Generate Parentheses.vcxproj", "{5EABF71B-C0D1-4BB6-80DD-5FF7EE95379A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24. Swap Nodes in Pairs", "24. Swap Nodes in Pairs\24. Swap Nodes in Pairs.vcxproj", "{4059F79B-7F44-45AA-9219-C8CEA8871A1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{5EABF71B-C0D1-4BB6-80DD-5FF7EE95379A}.Release|x64.Build.0 = Release|x64
 		{5EABF71B-C0D1-4BB6-80DD-5FF7EE95379A}.Release|x86.ActiveCfg = Release|Win32
 		{5EABF71B-C0D1-4BB6-80DD-5FF7EE95379A}.Release|x86.Build.0 = Release|Win32
+		{4059F79B-7F44-45AA-9219-C8CEA8871A1C}.Debug|x64.ActiveCfg = Debug|x64
+		{4059F79B-7F44-45AA-9219-C8CEA8871A1C}.Debug|x64.Build.0 = Debug|x64
+		{4059F79B-7F44-45AA-9219-C8CEA8871A1C}.Debug|x86.ActiveCfg = Debug|Win32
+		{4059F79B-7F44-45AA-9219-C8CEA8871A1C}.Debug|x86.Build.0 = Debug|Win32
+		{4059F79B-7F44-45AA-9219-C8CEA8871A1C}.Release|x64.ActiveCfg = Release|x64
+		{4059F79B-7F44-45AA-9219-C8CEA8871A1C}.Release|x64.Build.0 = Release|x64
+		{4059F79B-7F44-45AA-9219-C8CEA8871A1C}.Release|x86.ActiveCfg = Release|Win32
+		{4059F79B-7F44-45AA-9219-C8CEA8871A1C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
