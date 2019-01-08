@@ -33,7 +33,7 @@ public:
 		note[0] = head;
 		for (int i = 0; i < time; i++) {
 			int len = 1;
-			while (cur->next) {
+			while (cur->next) {  
 				next = cur->next;
 				cur->next = pre;
 				pre = cur;
