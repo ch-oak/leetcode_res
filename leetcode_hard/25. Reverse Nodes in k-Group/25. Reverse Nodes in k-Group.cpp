@@ -15,11 +15,14 @@ struct ListNode {
 
 
 /**
-*应该是前面的reverse 2-group的升级版
+*应该是前面的reverse 2-group的升级版,真滴是难受，因为在循环里重定义了cur,出了循环cur又被全局cur覆盖，一直没找出原因
+*主要还是链表反转，和dummy node的设置
 */
 class Solution {
 public:
 	ListNode* reverseKGroup(ListNode* head, int k) {
+		if (k == 1 || !head)
+			return head;
 		ListNode* dummy = new ListNode(-1);
 		dummy->next = head;
 		ListNode* left = dummy;
@@ -28,21 +31,25 @@ public:
 	
 		int i = 0;
 		while (cur) {
-
+			ListNode *tmp = cur;
 			for (i = 1; i < k && cur; i++) 
 					cur = cur->next;
 			
-			if (i == k) {
+			if (i == k&&cur!=NULL) {
 				right = cur->next;
 				ListNode* pre = left->next;
-				ListNode* cur = pre->next;
+				cur = pre->next;
 				while (cur != right) {
 					pre->next = cur->next;
 					cur->next = left->next;
 					left->next = cur;
 					cur = pre->next;
 				}
+
 				left = pre;
+		
+
+
 			}
 			else
 				break;
