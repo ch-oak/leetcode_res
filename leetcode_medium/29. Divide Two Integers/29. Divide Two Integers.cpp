@@ -27,7 +27,7 @@ public:
 		if (divisor == 1)
 			return flag * dvd;
 		while (dvd>=dvs) {
-			long long mul = 1,temp = dvs;//这里如果用int的话会报错
+			long long mul = 1,temp = dvs;//这里如果用int的话，temp不断增大最后会溢出，计算2147483647/2的话会超时
 			while (dvd > (temp << 1)) {
 				temp <<= 1;
 				mul <<= 1;
