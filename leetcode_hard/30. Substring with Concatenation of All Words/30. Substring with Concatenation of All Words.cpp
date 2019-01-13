@@ -25,9 +25,9 @@ public:
 
 	}
 private:
-	bool get_pos(string s, string word, vector<int> w_pos) {
+	bool get_pos(string &s, string &word, vector<int> &w_pos) {
 		string::size_type pos = 0;
-		while ((pos = s.find_first_of(word) != string::npos)) {
+		while ((pos = s.find_first_of(word)) != string::npos) {
 			w_pos.push_back(pos);
 			pos++;
 		}
