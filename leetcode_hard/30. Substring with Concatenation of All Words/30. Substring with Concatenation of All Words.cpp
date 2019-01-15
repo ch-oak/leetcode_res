@@ -8,6 +8,7 @@
 #include <sstream>
 #include <vector>
 #include <set>
+#include <unordered_map>
 
 using namespace std;
 
@@ -26,7 +27,7 @@ Expected
 [0,1,2]
 */
 
-class Solution {
+class Solution1 {
 public:
 	vector<int> findSubstring(string s, vector<string>& words) {
 		if (s.empty() || words.empty())
@@ -56,7 +57,7 @@ private:
 		string::size_type pos = 0;
 		while ((pos = s.find(word,pos)) != string::npos) {
 			w_pos.push_back(pos);
-			pos += word_len;
+			pos++;
 		}
 		if (w_pos.empty())
 			return false;
@@ -64,12 +65,21 @@ private:
 	}
 
 	void dfs(set<int> &res, set<int> seq, vector<vector<int>> &all_pos, int i) {//想要seq递归调用的时候增加，递归回来的时候又复原，应该不能用引用
-		if (seq.size() > len)
+		if (i > len)
 			return;
 		if(!seq.empty()&&(*seq.rbegin()-*seq.begin()>word_len*(len-1)))
 			return;
 		if (seq.size() == len) {
-			res.insert(*seq.begin());
+			auto front = seq.begin();
+			auto cur = ++seq.begin();
+			while (cur != seq.end()) {
+				if (*cur - *front != word_len)
+					break;
+				++front;
+				++cur;
+			}
+			if(cur==seq.end())
+				res.insert(*seq.begin());
 			return;
 		}
 		for (int k = 0; k < all_pos[i].size(); k++) {
@@ -81,6 +91,41 @@ private:
 			else
 				continue;
 		}
+	}
+};
+
+
+/**
+*参考：https://leetcode.com/problems/substring-with-concatenation-of-all-words/discuss/13658/Easy-Two-Map-Solution-(C%2B%2BJava)
+*双map法，一个map用于存储所有word出现的次数，一个map用于记录从s的i位置走num个word长度word出现的次数，当出现差异时自增i
+*/
+class Solution {
+public:
+	vector<int> findSubstring(string s, vector<string>& words) {
+		if (s.empty() || words.empty())
+			return {};
+		unordered_map<string, int> count;
+		for (auto word : words)
+			count[word]++;
+		int n = s.size(), len = words[0].size(), num = words.size();
+		vector<int> res;
+		for (int i = 0; i < n - num * len + 1; i++) {
+			unordered_map<string, int> seen;
+			int j = 0;
+			for (; j < num ; j++) {
+				string temp = s.substr(i+j*len, len);
+				if (count.find(temp) != count.end()) {
+					seen[temp]++;
+					if (seen[temp] > count[temp])
+						break;
+				}
+				else
+					break;
+			}
+			if (j == num)
+				res.push_back(i);
+		}
+		return res;
 	}
 };
 
