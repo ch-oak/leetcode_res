@@ -1,5 +1,5 @@
 ﻿// 30. Substring with Concatenation of All Words.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+//给定字符串s,和一串words，找出所有包含所有words的位置
 
 #include "pch.h"
 #define _CRT_SECURE_NO_WARNINGS
@@ -15,6 +15,7 @@ using namespace std;
 /**
 *应该是动态规划，将words中每个word出现的pos找出来，能组成几个等差数列
 *可能会出现重复的单词，所以不正确，不对，好像也可以
+*使用dfs超时了
 */
 
 /**
