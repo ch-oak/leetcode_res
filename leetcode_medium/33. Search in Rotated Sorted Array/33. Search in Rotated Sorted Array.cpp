@@ -12,7 +12,9 @@ using namespace std;
 
 
 /**
-*想到是二分查找，但是查找pivot的过程不就O(n)了吗
+*想到是二分查找，但是查找pivot的过程不就O(n)了吗,查找pivot的过程也用二分查找
+*另外一个巨大的收获是发现可以学习leetcode playground里的代码，学习利用输入数据（一般是字符串）构建树，链表等比较复杂的数据结构
+*还有一些快捷操作，快速运行，提交，注释，代码移动
 */
 class Solution {
 public:
@@ -28,19 +30,21 @@ public:
 		return binary_search(nums, pivot, len - 1, target);
 	}
 private:
+
+	//返回最小值所在的index
 	int find_pivot(vector<int>& nums, int left, int right) {
 		int len = nums.size();
 		if (nums[left] < nums[right])
 			return 0;
 		while (left <= right) {
 			int pivot = (left + right) / 2;
-			if (pivot<len-1 && nums[pivot] > nums[pivot + 1])
+			if (nums[pivot] > nums[pivot + 1])
 				return pivot + 1;
 			else {
-				if (nums[pivot] > nums[left])
-					left = pivot + 1;
-				else
+				if (nums[pivot] < nums[left])
 					right = pivot - 1;
+				else
+					left = pivot + 1;
 			}
 		}
 		return 0;
@@ -52,10 +56,11 @@ private:
 			if (nums[pivot] == target)
 				return pivot;
 			else {
-				if (nums[pivot] > target)
-					right = pivot - 1;
-				else
+				if (nums[pivot] < target)
 					left = pivot + 1;
+				else
+					right = pivot - 1;
+
 			}
 		}
 
