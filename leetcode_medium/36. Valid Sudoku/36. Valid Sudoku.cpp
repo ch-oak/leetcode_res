@@ -100,7 +100,7 @@ public:
 *记录block的有点厉害，直接i,j都除以3就将block编码了
 *新学到的东西：c++里，char int类型均不能转换为string
 *char可以使用push_back压入stringint要使用to_string函数
-*无序容器的插入是范围一个pair,first是迭代器，second是true和false表示插入还是未插入
+*无序容器的插入是范围一个pair,first是迭代器，second是true或者false表示插入还是未插入
 */
 
 class Solution {
