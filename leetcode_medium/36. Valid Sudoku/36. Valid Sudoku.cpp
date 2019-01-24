@@ -4,14 +4,15 @@
 #include "pch.h"
 #include <iostream>
 #include <vector>
-
+#include <unordered_set>
+#include <string>
 using namespace std;
 
 /**
 *解法1：用一个vector记录每一行或者每一列或者子表格中的元素，如果出现重复元素返回错误。很笨的遍历方法。跑了5次循环。
 */
 
-class Solution {
+class Solution1 {
 public:
 	bool isValidSudoku(vector<vector<char>>& board) {
 		for (int i = 0; i < 9; i++) {
@@ -93,8 +94,39 @@ public:
 	
 };
 
+/**
+*参考：https://leetcode.com/problems/valid-sudoku/discuss/15472/Short%2BSimple-Java-using-Strings
+*解法2：用set记录每个数字在哪一行，哪一列，哪一个block
+*记录block的有点厉害，直接i,j都除以3就将block编码了
+*新学到的东西：c++里，char int类型均不能转换为string
+*char可以使用push_back压入stringint要使用to_string函数
+*无序容器的插入是范围一个pair,first是迭代器，second是true和false表示插入还是未插入
+*/
+
+class Solution {
+public:
+	bool isValidSudoku(vector<vector<char>>& board) {
+		unordered_set<string> container;
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+				if (board[i][j] != '.') {
+					string temp;
+					temp.push_back(board[i][j]);
+					if (!container.insert(temp + " in row" + to_string(i)).second ||
+						!container.insert(temp + " in col" + to_string(j)).second ||
+						!container.insert(temp + "in block" + to_string(i / 3) +"&" + to_string(j / 3)).second)
+						return false;
+				}
+			}
+		}
+		return true;
+	}
+};
+
 int main()
 {
+	int i = 1;
+	cout << "test" + to_string(i) << endl;
 	vector<vector<char>> board = { {'5', '3', '.', '.', '7', '.', '.', '.', '.'}, {'6', '.', '.', '1', '9', '5', '.', '.', '.'}, {'.', '9', '8', '.', '.', '.', '.', '6', '.'}, {'8', '.', '.', '.', '6', '.', '.', '.', '3'}, {'4', '.', '.', '8', '.', '3', '.', '.', '1'}, {'7', '.', '.', '.', '2', '.', '.', '.', '6'}, {'.', '6', '.', '.', '.', '.', '2', '8', '.'}, {'.', '.', '.', '4', '1', '9', '.', '.', '5'}, {'.', '.', '.', '.', '8', '.', '.', '7', '9'} };
 
 	cout << Solution().isValidSudoku(board);
