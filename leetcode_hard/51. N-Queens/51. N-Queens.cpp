@@ -1,6 +1,6 @@
 ﻿// 51. N-Queens.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
-
+//n×n的格子上放n个皇后，不能相互攻击(任意两个皇后不在同一行，同一列，同一斜线上）
+//Tags:Backtracking
 #include "pch.h"
 #include <iostream>
 #include <vector>
@@ -8,18 +8,51 @@
 
 using namespace std;
 
+/**
+*解法1：典型的回溯算法
+*/
+
 class Solution {
 public:
 	vector<vector<string>> solveNQueens(int n) {
-
+		vector<vector<string>> res;
+		vector<string> nQueens(n, string(n, '.'));
+		solveNQueens(res, nQueens, 0, n);
+		return res;
+	}
+private:
+	void solveNQueens(vector<vector<string>> &res, vector<string> &nQueens, int row, int n) {
+		if (row == n) {
+			res.push_back(nQueens);
+			return;
+		}
+		for (int col = 0; col < n; col++) {
+			if (isValid(nQueens, row, col, n)) {
+				nQueens[row][col] = 'Q';
+				solveNQueens(res, nQueens, row + 1, n);
+				nQueens[row][col] = '.';
+			}
+		}
+	}
+	bool isValid(vector<string> &nQueens, int row, int col,int n) {
+		for (int i = 0; i < row; i++)
+			if (nQueens[i][col] == 'Q')
+				return false;
+		for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--)//45度
+			if (nQueens[i][j] == 'Q')
+				return false;
+		for (int i = row - 1, j = col + 1; i >= 0 && j < n; i--, j++)//135度
+			if (nQueens[i][j] == 'Q')
+				return false;
+		return true;
 	}
 };
 int main()
 {
-	auto res = Solution().solveNQueens(3);
+	auto res = Solution().solveNQueens(4);
 	for (auto vec : res) {
 		for (auto v : vec)
-			cout << v << " ";
+			cout << v << " " << endl;
 		cout << endl;
 	}
     std::cout << "Hello World!\n"; 
