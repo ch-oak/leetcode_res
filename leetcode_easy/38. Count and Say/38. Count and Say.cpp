@@ -1,5 +1,6 @@
 ﻿// 38. Count and Say.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //最初的数字为1，下一个数字为上一个数字的count,11,21,1211......
+//Tags:String
 
 #include "pch.h"
 #define _CRT_SECURE_NO_WARNINGS
@@ -11,7 +12,7 @@ using namespace std;
 /**
 *最简单的做法，因为因为测试用例为1到30，直接将所有的测试结果都计算出来
 */
-class Solution {
+class Solution1 {
 public:
 	string countAndSay(int n) {
 		vector<string> str(31);
@@ -23,6 +24,39 @@ public:
 			str[i] = countSay(temp);
 		}
 		return str[n];
+	}
+private:
+	string countSay(string &temp) {
+		string res;
+		int pre = 0;
+		int i = 1;
+		for (; i < temp.size(); i++) {
+			if (temp[i] != temp[i - 1]) {
+				res += to_string(i - pre);
+				res += temp[pre];
+				pre = i;
+			}
+		}
+		res += to_string(i - pre);
+		res += temp[pre];
+		return res;
+	}
+};
+
+
+class Solution {
+public:
+	string countAndSay(int n) {
+		if (n == 1)
+			return "1";
+		string pre = "1";
+		string cur = countAndSay(n - 1);
+		cur = countSay(cur);
+	/*	for (int i = 2; i <= n; i++) {
+			cur = countSay(pre);
+			pre = cur;
+		}*/
+		return cur;
 	}
 private:
 	string countSay(string &temp) {
