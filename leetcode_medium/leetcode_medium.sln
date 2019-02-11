@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "36. Valid Sudoku", "36. Val
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "39. Combination Sum", "39. Combination Sum\39. Combination Sum.vcxproj", "{E3607910-198B-4C07-B2ED-8CA39FB9A88F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "40. Combination Sum II", "40. Combination Sum II\40. Combination Sum II.vcxproj", "{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -181,6 +183,14 @@ Global
 		{E3607910-198B-4C07-B2ED-8CA39FB9A88F}.Release|x64.Build.0 = Release|x64
 		{E3607910-198B-4C07-B2ED-8CA39FB9A88F}.Release|x86.ActiveCfg = Release|Win32
 		{E3607910-198B-4C07-B2ED-8CA39FB9A88F}.Release|x86.Build.0 = Release|Win32
+		{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}.Debug|x64.ActiveCfg = Debug|x64
+		{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}.Debug|x64.Build.0 = Debug|x64
+		{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}.Debug|x86.ActiveCfg = Debug|Win32
+		{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}.Debug|x86.Build.0 = Debug|Win32
+		{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}.Release|x64.ActiveCfg = Release|x64
+		{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}.Release|x64.Build.0 = Release|x64
+		{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}.Release|x86.ActiveCfg = Release|Win32
+		{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
