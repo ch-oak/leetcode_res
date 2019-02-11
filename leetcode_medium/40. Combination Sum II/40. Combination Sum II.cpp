@@ -5,17 +5,37 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
+#include <set>
 #include <string>
 #include <sstream>
+#include <algorithm>
 
 using namespace std;
 
+/**
+*对39题略作修改
+*/
 class Solution {
 public:
 	vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
-
+		sort(candidates.begin(), candidates.end());
+        set <vector<int>> res;
+		vector<int> temp;
+		dfs(res, candidates, temp, target, 0);
+		vector < vector<int>> res_vec(res.begin(), res.end());
+		return res_vec;
 	}
 private:
+	void dfs(set<vector<int>> &res, vector<int>& candidates,vector<int> temp, int target,int next) {
+		if (target == 0)
+			res.insert(temp);
+		if (target < 0)return;
+		for (int i = next; i < candidates.size(); i++) {
+			temp.push_back(candidates[i]);
+			dfs(res, candidates, temp, target - candidates[i],i+1);//不能重复就从下一个数字开始，使用set存储结果
+			temp.pop_back();
+		}
+	}
 };
 
 int main()
@@ -36,7 +56,6 @@ int main()
 				cout << v << " ";
 			cout << endl;
 		}
-
 	}
     std::cout << "Hello World!\n"; 
 }
