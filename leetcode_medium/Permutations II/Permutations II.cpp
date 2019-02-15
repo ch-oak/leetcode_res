@@ -20,11 +20,11 @@ int main()
 {
 	freopen("in.txt", "r", stdin);
 	string line;
-	while (cin >> line) {
+	while (getline(cin,line)) {
 		stringstream ss(line);
 		string temp;
 		vector<int> nums;
-		while (getline(ss, temp, ","))
+		while (getline(ss, temp, ','))
 			nums.push_back(stoi(temp));
 	}
     std::cout << "Hello World!\n"; 
