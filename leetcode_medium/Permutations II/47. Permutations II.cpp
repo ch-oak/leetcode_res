@@ -1,4 +1,4 @@
-﻿// Permutations II.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿// 47. Permutations II.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
 #include "pch.h"
@@ -7,11 +7,39 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <set>
 
+
+/**
+*解法1:先用简单的方法做，照搬46题回溯的做法，使用set存储可能出现的重复的情况。
+*/
 using namespace std;
 class Solution {
 public:
 	vector<vector<int>> permuteUnique(vector<int>& nums) {
+		set<vector<int>> res;
+		vector<int> temp;
+		vector<int> visited(nums.size(), 0);
+		backtracking(nums, visited, res, temp);
+		vector<vector<int>> vec_res(res.begin(),res.end());
+		return vec_res;
+		
+	}
+private:
+	void backtracking(vector<int>& nums, vector<int> &visited,set<vector<int>> &res, vector<int> &temp) {
+		if (temp.size() == nums.size()) {
+			res.insert(temp);
+			return;
+		}
+		for (int i = 0; i < nums.size(); i++) {
+			if (visited[i] == 0) {
+				visited[i] = 1;
+				temp.push_back(nums[i]);
+				backtracking(nums, visited, res, temp);
+				temp.pop_back();
+				visited[i] = 0;
+			}
+		}
 
 	}
 };
@@ -26,6 +54,13 @@ int main()
 		vector<int> nums;
 		while (getline(ss, temp, ','))
 			nums.push_back(stoi(temp));
+		auto res = Solution().permuteUnique(nums);
+		for (auto vec : res) {
+			for (auto v : vec)
+				cout << v << " ";
+			cout << endl;
+		}
+
 	}
     std::cout << "Hello World!\n"; 
 }
