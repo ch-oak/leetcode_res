@@ -2,22 +2,39 @@
 //
 
 #include "pch.h"
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
 #include <string>
 #include <sstream>
+#include <set>
+#include <algorithm>
 
 using namespace std;
 
 class Solution {
 public:
 	vector<vector<string>> groupAnagrams(vector<string>& strs) {
-
+		auto strs_copy = strs;
+		set<string> unique;
+		for (int i = 0; i < strs.size(); i++) {
+			sort(strs[i].begin(), strs[i].end());
+			unique.insert(strs[i]);
+		}
+		vector<string> unique_vec(unique.begin(),unique.end());
+		vector<vector<string>> res(unique.size());
+		for (int i = 0; i < strs.size(); i++) {
+			auto pos = find(unique_vec.begin(),unique_vec.end(),strs[i]);
+			auto num = pos - unique_vec.begin();
+			res[num].push_back(strs_copy[i]);
+		}
+		return res;
 	}
 };
 
 int main()
 {
+	freopen("in.txt", "r", stdin);
 	string line;
 	while (getline(cin,line)) {
 		vector<string> strs;
