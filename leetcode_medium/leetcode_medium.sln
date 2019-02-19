@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "47. Permutations II", "Perm
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "48. Rotate Image", "48. Rotate Image\48. Rotate Image.vcxproj", "{D7FE8D0F-EBAA-4519-A6C3-DCAF12F1355B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "49. Group Anagrams", "49. Group Anagrams\49. Group Anagrams.vcxproj", "{12DCF311-976D-44F5-AA01-B361B91F6FAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{D7FE8D0F-EBAA-4519-A6C3-DCAF12F1355B}.Release|x64.Build.0 = Release|x64
 		{D7FE8D0F-EBAA-4519-A6C3-DCAF12F1355B}.Release|x86.ActiveCfg = Release|Win32
 		{D7FE8D0F-EBAA-4519-A6C3-DCAF12F1355B}.Release|x86.Build.0 = Release|Win32
+		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Debug|x64.ActiveCfg = Debug|x64
+		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Debug|x64.Build.0 = Debug|x64
+		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Debug|x86.ActiveCfg = Debug|Win32
+		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Debug|x86.Build.0 = Debug|Win32
+		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Release|x64.ActiveCfg = Release|x64
+		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Release|x64.Build.0 = Release|x64
+		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Release|x86.ActiveCfg = Release|Win32
+		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
