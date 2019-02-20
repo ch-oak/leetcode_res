@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "35. Search Insert Position"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "38. Count and Say", "38. Count and Say\38. Count and Say.vcxproj", "{F975915A-88F7-4F07-B555-A4FAA58D2835}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "58. Length of Last Word", "58. Length of Last Word\58. Length of Last Word.vcxproj", "{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{F975915A-88F7-4F07-B555-A4FAA58D2835}.Release|x64.Build.0 = Release|x64
 		{F975915A-88F7-4F07-B555-A4FAA58D2835}.Release|x86.ActiveCfg = Release|Win32
 		{F975915A-88F7-4F07-B555-A4FAA58D2835}.Release|x86.Build.0 = Release|Win32
+		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Debug|x64.ActiveCfg = Debug|x64
+		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Debug|x64.Build.0 = Debug|x64
+		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Debug|x86.ActiveCfg = Debug|Win32
+		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Debug|x86.Build.0 = Debug|Win32
+		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Release|x64.ActiveCfg = Release|x64
+		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Release|x64.Build.0 = Release|x64
+		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Release|x86.ActiveCfg = Release|Win32
+		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
