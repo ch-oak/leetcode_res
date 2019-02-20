@@ -1,6 +1,6 @@
 ﻿// 58. Length of Last Word.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
-
+//返回字符串中最后一个单词的长度，单词用空格隔开，空格数目不定
+//Tag:string
 #include "pch.h"
 #include <iostream>
 #include <string>
@@ -8,6 +8,10 @@
 #include <vector>
 
 using namespace std;
+
+/**
+*解法1：从尾巴上逐一遍历，注意next应该初始化为-1。
+*/
 class Solution {
 public:
 	int lengthOfLastWord(string s) {
