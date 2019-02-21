@@ -47,6 +47,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "48. Rotate Image", "48. Rot
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "49. Group Anagrams", "49. Group Anagrams\49. Group Anagrams.vcxproj", "{12DCF311-976D-44F5-AA01-B361B91F6FAC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "50. Pow(x, n)", "50. Pow(x, n)\50. Pow(x, n).vcxproj", "{FE53B1C8-E42F-4DDD-9526-BF2DC7A23C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -231,6 +233,14 @@ Global
 		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Release|x64.Build.0 = Release|x64
 		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Release|x86.ActiveCfg = Release|Win32
 		{12DCF311-976D-44F5-AA01-B361B91F6FAC}.Release|x86.Build.0 = Release|Win32
+		{FE53B1C8-E42F-4DDD-9526-BF2DC7A23C07}.Debug|x64.ActiveCfg = Debug|x64
+		{FE53B1C8-E42F-4DDD-9526-BF2DC7A23C07}.Debug|x64.Build.0 = Debug|x64
+		{FE53B1C8-E42F-4DDD-9526-BF2DC7A23C07}.Debug|x86.ActiveCfg = Debug|Win32
+		{FE53B1C8-E42F-4DDD-9526-BF2DC7A23C07}.Debug|x86.Build.0 = Debug|Win32
+		{FE53B1C8-E42F-4DDD-9526-BF2DC7A23C07}.Release|x64.ActiveCfg = Release|x64
+		{FE53B1C8-E42F-4DDD-9526-BF2DC7A23C07}.Release|x64.Build.0 = Release|x64
+		{FE53B1C8-E42F-4DDD-9526-BF2DC7A23C07}.Release|x86.ActiveCfg = Release|Win32
+		{FE53B1C8-E42F-4DDD-9526-BF2DC7A23C07}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
