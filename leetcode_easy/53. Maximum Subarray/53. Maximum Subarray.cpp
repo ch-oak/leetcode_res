@@ -1,42 +1,31 @@
-﻿// 50. Pow(x, n).cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//求指数
-//Tag:Math Binary Search
+﻿// 53. Maximum Subarray.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+//
 
 #include "pch.h"
 #include <iostream>
+#include <vector>
 #include <string>
-//#include "limits.h"
+#include <sstream>
+#include <algorithm>
 
 using namespace std;
 
-/**
-*解法1：n次方分解为2的指数形式
-*/
 class Solution {
 public:
-	double myPow(double x, int n) {
-		if (n == 0)
-			return 1;
-		if (n == INT_MIN)//n可能为-2^31次方，直接取绝对值会越界
-			return myPow(x*x, n / 2);
-		if (n < 0) {
-			x = 1 / x;
-			n = -n;
+	int maxSubArray(vector<int>& nums) {
+		int len = nums.size();
+		vector<int> dp(len);
+		dp[0] = nums[0];
+		int max = dp[0];
+		for (int i = 1; i < len; i++) {
+			dp[i] = nums[i] + (dp[i - 1] > 0 ? dp[i - 1] : 0);
+			max = std::max(max, dp[i]);
 		}
-		double pow = 1;
-		while (n) {
-			if (n % 2 == 1)//相当与n&1
-				pow *= x;
-			x *= x;
-			n >>= 1;	
-		}
-		return pow;
+		return max;
 	}
 };
-
 int main()
 {
-	cout << Solution().myPow(2, 10) << endl;
     std::cout << "Hello World!\n"; 
 }
 

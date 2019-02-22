@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "38. Count and Say", "38. Co
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "58. Length of Last Word", "58. Length of Last Word\58. Length of Last Word.vcxproj", "{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "53. Maximum Subarray", "53. Maximum Subarray\53. Maximum Subarray.vcxproj", "{92009E98-6DBF-4CD6-AA8E-986B56A8F092}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Release|x64.Build.0 = Release|x64
 		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Release|x86.ActiveCfg = Release|Win32
 		{63FE04FB-8A4F-41A2-B9B8-70773FEDC582}.Release|x86.Build.0 = Release|Win32
+		{92009E98-6DBF-4CD6-AA8E-986B56A8F092}.Debug|x64.ActiveCfg = Debug|x64
+		{92009E98-6DBF-4CD6-AA8E-986B56A8F092}.Debug|x64.Build.0 = Debug|x64
+		{92009E98-6DBF-4CD6-AA8E-986B56A8F092}.Debug|x86.ActiveCfg = Debug|Win32
+		{92009E98-6DBF-4CD6-AA8E-986B56A8F092}.Debug|x86.Build.0 = Debug|Win32
+		{92009E98-6DBF-4CD6-AA8E-986B56A8F092}.Release|x64.ActiveCfg = Release|x64
+		{92009E98-6DBF-4CD6-AA8E-986B56A8F092}.Release|x64.Build.0 = Release|x64
+		{92009E98-6DBF-4CD6-AA8E-986B56A8F092}.Release|x86.ActiveCfg = Release|Win32
+		{92009E98-6DBF-4CD6-AA8E-986B56A8F092}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
