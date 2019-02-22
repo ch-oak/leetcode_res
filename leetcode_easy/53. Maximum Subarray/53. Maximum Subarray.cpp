@@ -1,5 +1,6 @@
 ﻿// 53. Maximum Subarray.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+//给定一个数组，找出最大连续子数组
+//Tag:Array Divide and Conquer Dynamic Programming
 
 #include "pch.h"
 #include <iostream>
@@ -10,6 +11,10 @@
 
 using namespace std;
 
+
+/**
+*解法1：动态规划，将问题划分为maxSubArray(nums,i)包含i的最大值,maxSubArray(nums,i) = nums[i] +(maxSubArray[i-1]>0?maxSubArray[i-1]:0);
+*/
 class Solution {
 public:
 	int maxSubArray(vector<int>& nums) {
