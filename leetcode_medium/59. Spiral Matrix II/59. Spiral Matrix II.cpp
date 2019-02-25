@@ -9,9 +9,9 @@
 using namespace std;
 
 /***
-*方法1：找规律
+*方法1：找规律，太复杂了
 */
-class Solution {
+class Solution1 {
 public:
 	vector<vector<int>> generateMatrix(int n) {
 		vector<vector<int>> ret(n,vector<int>(n));
@@ -35,10 +35,47 @@ public:
 	}
 };
 
+/**
+*方法2：使用变量记录开始和结束的行和列
+*/
+class Solution {
+public:
+	vector<vector<int>> generateMatrix(int n) {
+		vector<vector<int>> ret(n, vector<int>(n));
+		int row_start = 0;
+		int row_end = n - 1;
+		int col_start = 0;
+		int col_end = n - 1;
+		int num = 1;
+		while (num <= n * n) {
+			//
+			for (int i = col_start; i <= col_end; i++)
+				ret[row_start][i] = num++;
+			row_start++;
+			//
+			for (int i = row_start; i <= row_end; i++)
+				ret[i][col_end] = num++;
+			col_end--;
+			//
+			for (int i = col_end; i >= col_start; i--) {
+				//if (row_start <= row_end)
+					ret[row_end][i] = num++;
+			}
+			row_end--;
+			//
+			for (int i = row_end; i >= row_start; i--) {
+				//if (col_start <= col_end)
+					ret[i][col_start] = num++;
+			}
+			col_start++;
+		}
+		return ret;
+	}
+};
 
 int main()
 {
-	auto ret = Solution().generateMatrix(3);
+	auto ret = Solution().generateMatrix(4);
 	for (auto vec : ret) {
 		for (auto v : vec) {
 			cout << v << " ";
