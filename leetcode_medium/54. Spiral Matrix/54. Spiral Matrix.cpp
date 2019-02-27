@@ -1,5 +1,5 @@
 ﻿// 54. Spiral Matrix.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//Tag:
+//Tag:Array
 
 #include "pch.h"
 #include <iostream>
@@ -7,6 +7,9 @@
 
 using namespace std;
 
+/**
+*解法1：设置四个记录行列起点和终点的标志，注意越界。
+*/
 class Solution {
 public:
 	vector<int> spiralOrder(vector<vector<int>>& matrix) {
