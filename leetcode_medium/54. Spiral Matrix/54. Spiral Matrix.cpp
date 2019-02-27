@@ -13,6 +13,7 @@ public:
 		int row = matrix.size();
 		int col = matrix[0].size();
 		int num = matrix.size()*matrix.size();
+
 		int row_start = 0;
 		int row_end = row - 1;
 		int col_start = 0;
