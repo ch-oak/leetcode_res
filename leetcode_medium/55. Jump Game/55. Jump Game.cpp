@@ -32,16 +32,12 @@ private:
 };
 
 /**
-*想法3：回溯
+*想法3：Solution里回溯，超时了
 */
-class Solution {
+class Solution3 {
 public:
 	bool canJump(vector<int>& nums) {
-		int i = 0;
-		int len = nums.size();
-		for (int reach = 0; i < nums.size() && i <= reach; i++)
-			reach = max(i + nums[i], reach);
-		return i == len;
+		return canJumpFromPosition(0,nums);
 	}
 private:
 	bool canJumpFromPosition(int pos, vector<int>& nums) {
@@ -54,6 +50,64 @@ private:
 		}
 		return false;
 	}
+};
+
+/**
+*想法4：Solution里自顶向下的动态规划，相比回溯多了记忆
+*/
+enum Index { GOOD, BAD, UNKNOWN };
+
+class Solution4 {
+public:
+	bool canJump(vector<int>& nums) {
+		memo = new Index[nums.size()];
+		for (int i = 0; i < nums.size(); i++)
+			memo[i] = Index::UNKNOWN;
+		memo[nums.size() - 1] = Index::GOOD;
+		return canJumpFromPosition(0, nums);
+	}
+private:
+	Index *memo;
+
+	bool canJumpFromPosition(int pos, vector<int>& nums) {
+		if (memo[pos] != Index::UNKNOWN)
+			return memo[pos] == Index::GOOD ? true : false;
+		int furthestJump = std::min(pos + nums[pos], int(nums.size() - 1));
+		for (int nextPos = pos + 1; nextPos <= furthestJump; nextPos++) {
+			if (canJumpFromPosition(nextPos, nums)) {
+				memo[pos] = Index::GOOD;
+				return true;
+			}
+		}
+		memo[pos] = Index::BAD;
+		return false;
+	}
+};
+
+/**
+*想法5：Solution里自底向上的动态规划,不用递归，速度更块
+*/
+class Solution {
+public:
+	bool canJump(vector<int>& nums) {
+		memo = new Index[nums.size()];
+		for (int i = 0; i < nums.size(); i++)
+			memo[i] = Index::UNKNOWN;
+		memo[nums.size() - 1] = Index::GOOD;
+
+		for (int i = nums.size() - 2; i >= 0; i--) {
+			int furthestJump = std::min(i + nums[i], int(nums.size() - 1));
+			for (int j = i + 1; j <= furthestJump; j++) {//半段memo[i]是否为GOOD
+				if (memo[j] == GOOD) {
+					memo[i] = GOOD;
+					break;
+				}
+			}
+		}
+		return memo[0]==GOOD;
+	}
+private:
+	Index *memo;
 };
 
 /**
