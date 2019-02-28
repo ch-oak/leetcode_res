@@ -32,10 +32,35 @@ private:
 };
 
 /**
+*想法3：回溯
+*/
+class Solution {
+public:
+	bool canJump(vector<int>& nums) {
+		int i = 0;
+		int len = nums.size();
+		for (int reach = 0; i < nums.size() && i <= reach; i++)
+			reach = max(i + nums[i], reach);
+		return i == len;
+	}
+private:
+	bool canJumpFromPosition(int pos, vector<int>& nums) {
+		if (pos == nums.size() - 1)
+			return true;
+		int furthestJump = std::min(pos + nums[pos], int(nums.size() - 1));
+		for (int nextPos = pos + 1; nextPos <= furthestJump; nextPos++) {
+			if (canJumpFromPosition(nextPos, nums))
+				return true;
+		}
+		return false;
+	}
+};
+
+/**
 *想法2：https://leetcode.com/problems/jump-game/discuss/20917/Linear-and-simple-solution-in-C%2B%2B
 *记录能到达的最远距离
 */
-class Solution {
+class Solution2 {
 public:
 	bool canJump(vector<int>& nums) {
 		int i = 0;
