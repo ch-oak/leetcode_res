@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "59. Spiral Matrix II", "59.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "54. Spiral Matrix", "54. Spiral Matrix\54. Spiral Matrix.vcxproj", "{2E055FC4-9626-4D50-B944-3680858B5523}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "55. Jump Game", "55. Jump Game\55. Jump Game.vcxproj", "{6102D0D9-CFAA-4657-AF63-F76A9659CE24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{2E055FC4-9626-4D50-B944-3680858B5523}.Release|x64.Build.0 = Release|x64
 		{2E055FC4-9626-4D50-B944-3680858B5523}.Release|x86.ActiveCfg = Release|Win32
 		{2E055FC4-9626-4D50-B944-3680858B5523}.Release|x86.Build.0 = Release|Win32
+		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Debug|x64.ActiveCfg = Debug|x64
+		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Debug|x64.Build.0 = Debug|x64
+		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Debug|x86.ActiveCfg = Debug|Win32
+		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Debug|x86.Build.0 = Debug|Win32
+		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Release|x64.ActiveCfg = Release|x64
+		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Release|x64.Build.0 = Release|x64
+		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Release|x86.ActiveCfg = Release|Win32
+		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
