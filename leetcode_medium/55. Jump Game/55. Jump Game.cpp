@@ -33,13 +33,14 @@ private:
 
 /**
 *想法2：https://leetcode.com/problems/jump-game/discuss/20917/Linear-and-simple-solution-in-C%2B%2B
+*记录能到达的最远距离
 */
 class Solution {
 public:
 	bool canJump(vector<int>& nums) {
 		int i = 0;
 		int len = nums.size();
-		for (int reach = 0; i < nums.size()&&i <= reach; i++)
+		for (int reach = 0; i < nums.size()&&i <= reach; i++)//小于reach使得不会遍历到到达不了的地方
 			reach = max(i + nums[i], reach);
 		return i==len;
 	}
