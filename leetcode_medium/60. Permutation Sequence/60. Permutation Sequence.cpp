@@ -1,5 +1,6 @@
 ﻿// 60. Permutation Sequence.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //返回第k个完全排列
+//Math BackTracking
 
 #include "pch.h"
 #include <iostream>
@@ -14,20 +15,16 @@ public:
 		vector<int> factor(n + 1, 1);
 		for (int i = 1; i <= n; i++)
 			factor[i] = i * factor[i - 1];
-
-		int k_copy = k;
-		int n_copy = n;
+		int n_copy = n-1;
 		string digits = "123456789";
 		string res = "";
-		for (int i = 0; i < n-1; i++) {
-			--n_copy;
-			int th = k_copy / factor[n_copy];
-			int mo = k_copy - th * factor[n_copy];
+		while (n_copy) {
+			int th = (k-1) / factor[n_copy--];//规律
+			k = k - th * factor[n_copy+1];
 			res += digits[th];
 			digits.erase(digits.begin() + th);
-			k_copy = mo;
 		}
-		res += *digits.begin();
+		res += digits[k-1];
 		return res;
 	}
 };
