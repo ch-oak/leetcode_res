@@ -15,7 +15,7 @@
 *还是回溯，不过需要用一个visited来记录选择的数字，如果已经选择了就跳过
 */
 using namespace std;
-class Solution1 {
+class Solution1 {   
 public:
 	vector<vector<int>> permute(vector<int>& nums) {
 		int len = nums.size();
