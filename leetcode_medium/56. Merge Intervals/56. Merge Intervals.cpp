@@ -32,7 +32,11 @@ public:
 	vector<Interval> merge(vector<Interval>& intervals) {
 		vector<Interval> res;
 		sort(intervals.begin(), intervals.end(),cmp);
-		
+		for (int i = 0; i < intervals.size(); i++) {
+			for (int j = 0; j < intervals.size(); j++) {
+
+			}
+		}
 
 	}
 };
