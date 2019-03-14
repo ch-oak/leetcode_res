@@ -27,9 +27,8 @@ public:
 };
 int main()
 {
-<<<<<<< HEAD
-    std::cout << "Hello Git!    \n"; 
-=======
+
+
 	//freopen("in.txt", "r", stdin);
 	//int temp;
 	//vector<int> nums;
@@ -98,7 +97,7 @@ int main()
 	}
 	cout << res;
 
->>>>>>> fd2b6eb82629b9c0e16028dfb7376b26994a31fd
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
