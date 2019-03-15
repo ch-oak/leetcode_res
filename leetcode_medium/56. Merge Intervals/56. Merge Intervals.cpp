@@ -19,25 +19,23 @@ using namespace std;
   };
 
  bool cmp(const Interval& inter1, const Interval& inter2) {
-	 if (inter1.start < inter2.start)
-		 return 1;
-	 else if (inter1.start == inter2.start)
-		 return inter1.end < inter2.end;
-	 else
-		 return 0;
+	 return inter1.start < inter2.start;
  }
  
 class Solution {
 public:
 	vector<Interval> merge(vector<Interval>& intervals) {
+		if (intervals.empty())
+			return {};
 		vector<Interval> res;
-		sort(intervals.begin(), intervals.end(),cmp);
+		res.push_back(intervals[0]);
 		for (int i = 0; i < intervals.size(); i++) {
-			for (int j = 0; j < intervals.size(); j++) {
-
-			}
+			if (res.back().end < intervals[i].start)
+				res.push_back(intervals[i]);
+			else
+				res.back().end = max(res.back().end, intervals[i].end);
 		}
-
+		return res;
 	}
 };
 int main()
