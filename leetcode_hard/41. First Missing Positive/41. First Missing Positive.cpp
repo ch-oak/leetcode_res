@@ -13,6 +13,7 @@ public:
 		int len = nums.size();
 		for (int i = 0; i < len;) {
 			if (nums[i] != (i + 1) && nums[i] >= 1 && nums[i] <= len && nums[nums[i] - 1] != nums[i])
+				//如果nums[i]-1>i则将i位置的元素扔到后面去，如果nums[i]-1<i，则将num[i]扔到前面去
 				swap(nums[i], nums[nums[i] - 1]);
 			else
 				i++;
