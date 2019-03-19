@@ -7,6 +7,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <stack>
 
 using namespace std;
 /**
@@ -14,7 +15,7 @@ using namespace std;
 *和从该海拔向右遍历的最大右高度中的较小者减去海拔高度（木桶理论），所有海拔存水量加起来就是总的存水量
 */
 
-class Solution {
+class Solution1 {
 public:
 	int trap(vector<int>& height) {
 		int len = height.size();
@@ -30,10 +31,62 @@ public:
 		return ans;
 	}
 };
+/**
+*动态规划：一次遍历记录每个海拔的存水高度
+*/
+class Solution2 {
+public:
+	int trap(vector<int>& height) {
+		int len = height.size();
+		vector<int> left(len), right(len);
+		left[0] = height[0];
+		right[len-1] = height[len - 1];
+		for (int i = 1; i < len - 1; i++) {
+			left[i] = max(height[i], left[i - 1]);
+			right[len - i - 1] = max(height[len - i - 1], right[len - i]);
+		}
+		int ans = 0;
+		for (int i = 1; i < len - 1; i++)
+			ans += min(left[i], right[i]) - height[i];
+
+		return ans;
+		
+	}
+};
+
+/**
+*并不是直接加上一个凹槽里的水，是一层一层加上去的。
+*栈里存储了一个递减的海拔。
+*/
+class Solution3 {
+public:
+	int trap(vector<int>& height)
+	{
+		int ans = 0, current = 0;
+		stack<int> st;
+		while (current < height.size()) {
+			while (!st.empty() && height[current] > height[st.top()]) {//循环结束一次代表加上了一个凹槽的水，一个凹槽可能有多次循环
+				int top = st.top();
+				st.pop();
+				if (st.empty())
+					break;
+				int distance = current - st.top() - 1;
+				int bounded_height = min(height[current], height[st.top()]) - height[top];
+				int temp = distance * bounded_height;
+				ans += distance * bounded_height;
+			}
+
+			st.push(current++);
+		}
+		return ans;
+	}
+
+};
+
 
 int main()
 {
-	vector<int> height{ 0,1,0,2,1,0,1,3,2,1,2,1 };
+	vector<int> height{0,1,0,2,1,0,1,3,2,1,2,1};
 	Solution().trap(height);
     std::cout << "Hello World!\n"; 
 }
