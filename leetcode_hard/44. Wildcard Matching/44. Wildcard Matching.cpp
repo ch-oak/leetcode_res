@@ -7,6 +7,9 @@
 
 using namespace std;
 
+/**
+*https://blog.csdn.net/qq_29592167/article/details/83114404
+*/
 class Solution {
 public:
 	bool isMatch(string s, string p) {
