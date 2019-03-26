@@ -1,5 +1,8 @@
 ﻿// 200. Number of Islands.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+//给定一个由 '1'（陆地）和 '0'（水）组成的的二维矩阵，计算岛屿的数量。一个岛被水包围，
+//并且它是通过水平方向或垂直方向上相邻的陆地连接而成的。
+//你假设网格的四个边均被水包围。
+//Tag: Depth-first Search    Breadth-first Seartch    Union Find
 
 #include "pch.h"
 #define _CRT_SECURE_NO_WARNINGS
