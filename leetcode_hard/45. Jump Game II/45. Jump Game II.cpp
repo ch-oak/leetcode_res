@@ -4,20 +4,41 @@
 #include "pch.h"
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-//下意识觉得是动态规划
+//下意识觉得是动态规划，然而并不是
+/**
+BFS
+参考：https://blog.csdn.net/wusecaiyun/article/details/47041057
+记录上一次能跳跃到的最远距离，当i>last时候，跳跃次数加1，上一次能跳到的最远距离更新为当前能跳到的最远距离
+*/
 class Solution {
 public:
 	int jump(vector<int>& nums) {
-		int
+		int len = nums.size();
+		if (len < 2)
+			return 0;
+		int ret = 0, last = 0, cur = 0;
+		for (int i = 0; i < len; ++i) {
+			if (i > cur)//永远也跳不出去了
+				return -1;
+			if (i > last) {
+				last = cur;
+				++ret;
+			}
+			cur = max(cur, nums[i] + i);
+		}
+		return ret;
 	}
 };
 
 
 int main()
 {
+	vector<int> nums = { 5,9,3,2,1,0,2,3,3,1,0,0 };
+	cout << Solution().jump(nums);
     std::cout << "Hello World!\n"; 
 }
 
