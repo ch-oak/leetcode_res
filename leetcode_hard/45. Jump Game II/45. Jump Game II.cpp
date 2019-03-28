@@ -38,7 +38,7 @@ public:
 int main()
 {
 	vector<int> nums = { 5,9,3,2,1,0,2,3,3,1,0,0 };
-	cout << Solution().jump(nums);
+	cout << Solution().jump(nums) << endl;
     std::cout << "Hello World!\n"; 
 }
 
