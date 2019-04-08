@@ -73,6 +73,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "62. Unique Paths", "62. Uni
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "63. Unique Paths II", "63. Unique Paths II\63. Unique Paths II.vcxproj", "{3ED238EB-8987-4BB9-B50F-EFA497666E20}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "64. Minimum Path Sum", "64. Minimum Path Sum\64. Minimum Path Sum.vcxproj", "{D1FF36F1-9710-49CD-8641-EB8C3BC966DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -361,6 +363,14 @@ Global
 		{3ED238EB-8987-4BB9-B50F-EFA497666E20}.Release|x64.Build.0 = Release|x64
 		{3ED238EB-8987-4BB9-B50F-EFA497666E20}.Release|x86.ActiveCfg = Release|Win32
 		{3ED238EB-8987-4BB9-B50F-EFA497666E20}.Release|x86.Build.0 = Release|Win32
+		{D1FF36F1-9710-49CD-8641-EB8C3BC966DC}.Debug|x64.ActiveCfg = Debug|x64
+		{D1FF36F1-9710-49CD-8641-EB8C3BC966DC}.Debug|x64.Build.0 = Debug|x64
+		{D1FF36F1-9710-49CD-8641-EB8C3BC966DC}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1FF36F1-9710-49CD-8641-EB8C3BC966DC}.Debug|x86.Build.0 = Debug|Win32
+		{D1FF36F1-9710-49CD-8641-EB8C3BC966DC}.Release|x64.ActiveCfg = Release|x64
+		{D1FF36F1-9710-49CD-8641-EB8C3BC966DC}.Release|x64.Build.0 = Release|x64
+		{D1FF36F1-9710-49CD-8641-EB8C3BC966DC}.Release|x86.ActiveCfg = Release|Win32
+		{D1FF36F1-9710-49CD-8641-EB8C3BC966DC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
