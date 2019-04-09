@@ -57,9 +57,9 @@ int main()
 		{
 			for (int j = 1; j <= tot; j++)
 			{
-				if ((i&cycle[j]) == 0)
+				if ((i&cycle[j]) == 0)//cycle[j]为1的位置，i对应位置不能为1
 				{
-					dp[i | cycle[j]] = min(dp[i | cycle[j]], dp[i] + 1);//要判断在i的位上是否已有1存在
+					dp[i | cycle[j]] = min(dp[i | cycle[j]], dp[i] + 1);//要判断在i的位上是否已有1存在//加上这个回文串
 				}
 			}
 		}
