@@ -14,6 +14,8 @@ using namespace std;
 *用'/'分割字符串，用容器存储所有文件，方便返回上一级目录
 */
 class Solution {
+
+
 public:
 	string simplifyPath(string path) {
 
