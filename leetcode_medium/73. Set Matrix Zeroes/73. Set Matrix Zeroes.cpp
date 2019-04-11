@@ -8,6 +8,10 @@
 
 using namespace std;
 
+/**
+*更好的方法，将结果存储在第一行和第一列
+*https://leetcode.com/problems/set-matrix-zeroes/discuss/26014/Any-shorter-O(1)-space-solution
+*/
 class Solution {
 public:
 	void setZeroes(vector<vector<int>>& matrix) {
@@ -27,8 +31,8 @@ public:
 			for (int j = 0; j < cols; j++)
 				matrix[row][j] = 0;
 		}
-		for (auto col : zero_rows) {
-			for (int i = 0; i < cols; i++)
+		for (auto col : zero_cols) {
+			for (int i = 0; i < rows; i++)
 				matrix[i][col] = 0;
 		}
 	}
