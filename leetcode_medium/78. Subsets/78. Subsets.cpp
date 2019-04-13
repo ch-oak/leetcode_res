@@ -36,7 +36,7 @@ private:
 		}
 
 		for (int i = index; i < nums.size(); i++) {
-			temp.push_back(nums[i]);
+			temp.push_back(nums[i]);//先放一个数字在到后面挑，装满后放出元素，再到这个元素的后面去挑选元素。
 			dfs(res, nums, temp,i + 1, len);
 			temp.pop_back();
 		}
