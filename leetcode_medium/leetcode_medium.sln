@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "75. Sort Colors", "75. Sort
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "77. Combinations", "77. Combinations\77. Combinations.vcxproj", "{81981530-00ED-43CE-A0EC-A5B19A480CDC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "78. Subsets", "78. Subsets\78. Subsets.vcxproj", "{4AAE0309-2CAC-456C-A9FA-F11D76074A90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -421,6 +423,14 @@ Global
 		{81981530-00ED-43CE-A0EC-A5B19A480CDC}.Release|x64.Build.0 = Release|x64
 		{81981530-00ED-43CE-A0EC-A5B19A480CDC}.Release|x86.ActiveCfg = Release|Win32
 		{81981530-00ED-43CE-A0EC-A5B19A480CDC}.Release|x86.Build.0 = Release|Win32
+		{4AAE0309-2CAC-456C-A9FA-F11D76074A90}.Debug|x64.ActiveCfg = Debug|x64
+		{4AAE0309-2CAC-456C-A9FA-F11D76074A90}.Debug|x64.Build.0 = Debug|x64
+		{4AAE0309-2CAC-456C-A9FA-F11D76074A90}.Debug|x86.ActiveCfg = Debug|Win32
+		{4AAE0309-2CAC-456C-A9FA-F11D76074A90}.Debug|x86.Build.0 = Debug|Win32
+		{4AAE0309-2CAC-456C-A9FA-F11D76074A90}.Release|x64.ActiveCfg = Release|x64
+		{4AAE0309-2CAC-456C-A9FA-F11D76074A90}.Release|x64.Build.0 = Release|x64
+		{4AAE0309-2CAC-456C-A9FA-F11D76074A90}.Release|x86.ActiveCfg = Release|Win32
+		{4AAE0309-2CAC-456C-A9FA-F11D76074A90}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
