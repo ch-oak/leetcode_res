@@ -12,7 +12,7 @@ using namespace std;
 
 //回溯：https://blog.csdn.net/sysu_xiandan/article/details/78962137
 /**
-*找到结果如何从深层的调用中返回，建立一个bool变量逐层返回。
+*找到结果如何从深层的调用中返回? 答：建立一个bool变量逐层返回。
 */
 class Solution {
 public:
