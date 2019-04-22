@@ -10,33 +10,44 @@
 
 using namespace std;
 
+/**
+*双指针，right找到包含所有字符的子串，然后使用left来收缩。
+*使用hash表来判断是否找全和是否结束收缩。
+*/
+
 class Solution {
 public:
 	string minWindow(string s, string t) {
 		if (s.empty() || t.empty())
 			return "";
-		int left = 0, right = 0,cnt = 0;
-		string res;
+		int left = 0,cnt = 0;
+		string res = "";
 		unordered_map<char, int> letterCnt;
-		for (auto c : t) ++letterCnt[c];
-		for (; right < s.size(); right++) {
-			if (--letterCnt[s[right]] >= 0) ++cnt;
-			while(cnt)
+		int minLen = INT_MAX;
+		for (char c : t) ++letterCnt[c];//letterCnt[c]调用后letterCnt就为0
+		for (int right = 0; right < s.size(); right++) {
+			if (--letterCnt[s[right]]>= 0)//t中的元素为0或正数，非t中的元素为负数 
+				++cnt;
+			if (cnt == t.size())
+				cout << endl;
+			while (cnt == t.size()) {
+				if (minLen > right - left + 1) {
+					minLen = right - left + 1;
+					res = s.substr(left, minLen);
+				}
+				if (++letterCnt[s[left]] > 0) 
+					--cnt;
+				left++;
+			}
 		}
-	}
-private:
-	bool isIn(string &t, string & s) {
-		for (int i = 0; i < t.size(); i++) {
-			if (s.find(t[i]) == string::npos)
-				return false;
-		}
-		return true;
+		return res;
 	}
 };
 
 int main()
 {
-	
+	string S = "ADOBECODEBANC", T = "ABC";
+	cout << Solution().minWindow(S, T);
     std::cout << "Hello World!\n"; 
 }
 
