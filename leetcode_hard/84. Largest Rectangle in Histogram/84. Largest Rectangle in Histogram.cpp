@@ -12,6 +12,7 @@ using namespace std;
 
 /**
 *神奇的算法
+*https://leetcode.com/problems/largest-rectangle-in-histogram/discuss/28900/O(n)-stack-based-JAVA-solution
 */
 class Solution {
 public:
