@@ -5,9 +5,14 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+#include <algorithm>
+
 
 using namespace std;
 
+/**
+*神奇的算法
+*/
 class Solution {
 public:
 	int largestRectangleArea(vector<int>& heights) {
@@ -19,15 +24,19 @@ public:
 				st.push(i);
 			else {
 				int tp = st.top();
-				st.top();
-				res = max(res,heig)
+				st.pop();
+				res = max(res, heights[tp] * (st.empty() ? i : i - st.top() - 1));
+				i--;
 			}
 		}
+		return res;
 	}
 };
 
 int main()
 {
+	vector<int> heights = { 2,1,5,6,2,3 };
+	cout << Solution().largestRectangleArea(heights);
     std::cout << "Hello World!\n"; 
 }
 
