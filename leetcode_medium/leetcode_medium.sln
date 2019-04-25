@@ -95,6 +95,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "96. Unique Binary Search Tr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "98. Validate Binary Search Tree", "98. Validate Binary Search Tree\98. Validate Binary Search Tree.vcxproj", "{796993B9-BD43-444E-96B2-FC8ECD43022B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "102. Binary Tree Level Order Traversalon1", "102. Binary Tree Level Order Traversalon1\102. Binary Tree Level Order Traversalon1.vcxproj", "{BB74C576-1847-486C-8E67-20CFF9916A20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -471,6 +473,14 @@ Global
 		{796993B9-BD43-444E-96B2-FC8ECD43022B}.Release|x64.Build.0 = Release|x64
 		{796993B9-BD43-444E-96B2-FC8ECD43022B}.Release|x86.ActiveCfg = Release|Win32
 		{796993B9-BD43-444E-96B2-FC8ECD43022B}.Release|x86.Build.0 = Release|Win32
+		{BB74C576-1847-486C-8E67-20CFF9916A20}.Debug|x64.ActiveCfg = Debug|x64
+		{BB74C576-1847-486C-8E67-20CFF9916A20}.Debug|x64.Build.0 = Debug|x64
+		{BB74C576-1847-486C-8E67-20CFF9916A20}.Debug|x86.ActiveCfg = Debug|Win32
+		{BB74C576-1847-486C-8E67-20CFF9916A20}.Debug|x86.Build.0 = Debug|Win32
+		{BB74C576-1847-486C-8E67-20CFF9916A20}.Release|x64.ActiveCfg = Release|x64
+		{BB74C576-1847-486C-8E67-20CFF9916A20}.Release|x64.Build.0 = Release|x64
+		{BB74C576-1847-486C-8E67-20CFF9916A20}.Release|x86.ActiveCfg = Release|Win32
+		{BB74C576-1847-486C-8E67-20CFF9916A20}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
