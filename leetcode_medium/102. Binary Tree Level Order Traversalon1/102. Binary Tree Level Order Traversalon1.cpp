@@ -19,16 +19,16 @@ struct TreeNode {
 class Solution1 {
 public:
 	vector<vector<int>> levelOrder(TreeNode* root) {
-		queue<TreeNode*> next{ {root} };
+		queue<TreeNode*> cur{ {root} };
 		vector<vector<int>> res;
-		while (!next.empty()) {
+		while (!cur.empty()) {
 			vector<int> level;
-			for (int i = 0; i < next.size(); i++) {
-				TreeNode* front = next.front();
-				next.pop();
+			for (int i = cur.size(); i > 0; i++) {//把当前层的元素保存，并将下一层压入队列
+				TreeNode* front = cur.front();
+				cur.pop();
 				level.push_back(front->val);
-				if (front->left) next.push(front->left);
-				if (front->right) next.push(front->right);
+				if (front->left) cur.push(front->left);
+				if (front->right) cur.push(front->right);
 			}
 			res.push_back(level);
 		}
