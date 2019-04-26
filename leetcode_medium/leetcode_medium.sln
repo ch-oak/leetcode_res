@@ -101,6 +101,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "80. Remove Duplicates from 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "105. Construct Binary Tree from Preorder and Inorder Traversal", "105. Construct Binary Tree from Preorder and Inorder Traversal\105. Construct Binary Tree from Preorder and Inorder Traversal.vcxproj", "{0AB85A0F-18ED-4F9A-9439-C65DE3DC98CF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "114. Flatten Binary Tree to Linked List", "114. Flatten Binary Tree to Linked List\114. Flatten Binary Tree to Linked List.vcxproj", "{AEED1B54-BEAB-40C1-8F9B-7133C091C084}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -501,6 +503,14 @@ Global
 		{0AB85A0F-18ED-4F9A-9439-C65DE3DC98CF}.Release|x64.Build.0 = Release|x64
 		{0AB85A0F-18ED-4F9A-9439-C65DE3DC98CF}.Release|x86.ActiveCfg = Release|Win32
 		{0AB85A0F-18ED-4F9A-9439-C65DE3DC98CF}.Release|x86.Build.0 = Release|Win32
+		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Debug|x64.ActiveCfg = Debug|x64
+		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Debug|x64.Build.0 = Debug|x64
+		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Debug|x86.ActiveCfg = Debug|Win32
+		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Debug|x86.Build.0 = Debug|Win32
+		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Release|x64.ActiveCfg = Release|x64
+		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Release|x64.Build.0 = Release|x64
+		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Release|x86.ActiveCfg = Release|Win32
+		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
