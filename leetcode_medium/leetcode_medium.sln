@@ -103,6 +103,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "105. Construct Binary Tree 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "114. Flatten Binary Tree to Linked List", "114. Flatten Binary Tree to Linked List\114. Flatten Binary Tree to Linked List.vcxproj", "{AEED1B54-BEAB-40C1-8F9B-7133C091C084}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "139. Word Break", "139. Word Break\139. Word Break.vcxproj", "{F77A16A0-45A8-46B0-8AF7-1463C0034D9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -511,6 +513,14 @@ Global
 		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Release|x64.Build.0 = Release|x64
 		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Release|x86.ActiveCfg = Release|Win32
 		{AEED1B54-BEAB-40C1-8F9B-7133C091C084}.Release|x86.Build.0 = Release|Win32
+		{F77A16A0-45A8-46B0-8AF7-1463C0034D9F}.Debug|x64.ActiveCfg = Debug|x64
+		{F77A16A0-45A8-46B0-8AF7-1463C0034D9F}.Debug|x64.Build.0 = Debug|x64
+		{F77A16A0-45A8-46B0-8AF7-1463C0034D9F}.Debug|x86.ActiveCfg = Debug|Win32
+		{F77A16A0-45A8-46B0-8AF7-1463C0034D9F}.Debug|x86.Build.0 = Debug|Win32
+		{F77A16A0-45A8-46B0-8AF7-1463C0034D9F}.Release|x64.ActiveCfg = Release|x64
+		{F77A16A0-45A8-46B0-8AF7-1463C0034D9F}.Release|x64.Build.0 = Release|x64
+		{F77A16A0-45A8-46B0-8AF7-1463C0034D9F}.Release|x86.ActiveCfg = Release|Win32
+		{F77A16A0-45A8-46B0-8AF7-1463C0034D9F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
