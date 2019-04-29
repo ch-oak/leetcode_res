@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "121. Best Time to Buy and S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "136. Single Number", "136. Single Number\136. Single Number.vcxproj", "{4DD35DBD-E9EE-4D4F-BC09-891E4A29DE3E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "141. Linked List Cycle", "141. Linked List Cycle\141. Linked List Cycle.vcxproj", "{912B55D4-9A81-478F-AE1D-DD376BCD2008}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -191,6 +193,14 @@ Global
 		{4DD35DBD-E9EE-4D4F-BC09-891E4A29DE3E}.Release|x64.Build.0 = Release|x64
 		{4DD35DBD-E9EE-4D4F-BC09-891E4A29DE3E}.Release|x86.ActiveCfg = Release|Win32
 		{4DD35DBD-E9EE-4D4F-BC09-891E4A29DE3E}.Release|x86.Build.0 = Release|Win32
+		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Debug|x64.ActiveCfg = Debug|x64
+		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Debug|x64.Build.0 = Debug|x64
+		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Debug|x86.ActiveCfg = Debug|Win32
+		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Debug|x86.Build.0 = Debug|Win32
+		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Release|x64.ActiveCfg = Release|x64
+		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Release|x64.Build.0 = Release|x64
+		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Release|x86.ActiveCfg = Release|Win32
+		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
