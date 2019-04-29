@@ -1,6 +1,6 @@
 ﻿// 139. Word Break.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //按照给定的词典，能否将字符串分开
-//Tag:
+//Tag:Dynamic Programming
 
 #include "pch.h"
 #include <iostream>
