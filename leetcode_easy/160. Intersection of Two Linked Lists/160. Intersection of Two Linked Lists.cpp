@@ -13,6 +13,7 @@ struct ListNode {
 
 
 //遍历到结尾处后，再从对方的开头遍历，走的路均为二者长度之和，一定会相遇
+//https://www.cnblogs.com/grandyang/p/4128461.html
 class Solution {
 public:
 	ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
