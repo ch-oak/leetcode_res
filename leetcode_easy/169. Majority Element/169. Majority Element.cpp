@@ -1,30 +1,34 @@
-﻿// 160. Intersection of Two Linked Lists.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿// 169. Majority Element.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+//找众数
+//Tag:Array Divide and Conquer Bit Manipulation
 
 #include "pch.h"
 #include <iostream>
-
-//Definition for singly-linked list.
-struct ListNode {
-	int val;
-	ListNode *next;
-	ListNode(int x) : val(x), next(NULL) {}
-};
+#include <vector>
+#include <map>
+using namespace std;
 
 
-//遍历到结尾处后，再从对方的开头遍历，一定会相遇，走的路线长度相同，一定会相遇
-//https://www.cnblogs.com/grandyang/p/4128461.html
+//使用map记录每个数出现的次数
 class Solution {
 public:
-	ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-		if (!headA || !headB)
-			return NULL;
-		ListNode* p1 = headA, *p2 = headB;
-		while (p1 != p2) {
-			p1 = p1 ? p1->next : headB;
-			p2 = p2 ? p2->next : headA;
+	int majorityElement(vector<int>& nums) {
+		int len = nums.size();
+		map<int, int> res;
+		for (int i = 0; i < len; i++) {
+			res[nums[i]]++;
 		}
-		return p1;
+		int temp = 0;
+		int ret = nums[0];
+		auto beg = res.begin();
+		while (beg != res.end()) {
+			if (beg->second > temp) {
+				temp = beg->second;
+				ret = beg->first;
+			}
+			beg++;
+		}
+		return ret;
 	}
 };
 

@@ -1,30 +1,29 @@
-﻿// 160. Intersection of Two Linked Lists.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
-
+﻿// 198. House Robber.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+//不能选取相邻的数字，能获得的最大值
+//Dynamic Programming
 #include "pch.h"
 #include <iostream>
-
-//Definition for singly-linked list.
-struct ListNode {
-	int val;
-	ListNode *next;
-	ListNode(int x) : val(x), next(NULL) {}
-};
+#include <vector>
+#include <algorithm>
 
 
-//遍历到结尾处后，再从对方的开头遍历，一定会相遇，走的路线长度相同，一定会相遇
-//https://www.cnblogs.com/grandyang/p/4128461.html
+//一维动态规划：https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.
+using namespace std;
 class Solution {
 public:
-	ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-		if (!headA || !headB)
-			return NULL;
-		ListNode* p1 = headA, *p2 = headB;
-		while (p1 != p2) {
-			p1 = p1 ? p1->next : headB;
-			p2 = p2 ? p2->next : headA;
+	int rob(vector<int>& nums) {
+		int len = nums.size();
+		vector<int> rob(len + 1, 0);
+		if (len == 0)
+			return 0;
+		rob[0] = nums[0];
+		if (len == 1)
+			return nums[0];
+		rob[1] = max(nums[0], nums[1]);
+		for (int i = 2; i < len; i++) {
+			rob[i] = max(nums[i] + rob[i - 2], rob[i - 1]);
 		}
-		return p1;
+		return rob[len - 1];
 	}
 };
 
