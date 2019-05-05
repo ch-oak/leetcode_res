@@ -41,6 +41,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "136. Single Number", "136. 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "141. Linked List Cycle", "141. Linked List Cycle\141. Linked List Cycle.vcxproj", "{912B55D4-9A81-478F-AE1D-DD376BCD2008}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "155. Min Stack", "155. Min Stack\155. Min Stack.vcxproj", "{19DFB9D7-3C4C-4628-A92A-50A268B82721}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "160. Intersection of Two Linked Lists", "160. Intersection of Two Linked Lists\160. Intersection of Two Linked Lists.vcxproj", "{7F3E6672-DBA8-4190-AF76-97BC67FB6172}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -201,6 +205,22 @@ Global
 		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Release|x64.Build.0 = Release|x64
 		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Release|x86.ActiveCfg = Release|Win32
 		{912B55D4-9A81-478F-AE1D-DD376BCD2008}.Release|x86.Build.0 = Release|Win32
+		{19DFB9D7-3C4C-4628-A92A-50A268B82721}.Debug|x64.ActiveCfg = Debug|x64
+		{19DFB9D7-3C4C-4628-A92A-50A268B82721}.Debug|x64.Build.0 = Debug|x64
+		{19DFB9D7-3C4C-4628-A92A-50A268B82721}.Debug|x86.ActiveCfg = Debug|Win32
+		{19DFB9D7-3C4C-4628-A92A-50A268B82721}.Debug|x86.Build.0 = Debug|Win32
+		{19DFB9D7-3C4C-4628-A92A-50A268B82721}.Release|x64.ActiveCfg = Release|x64
+		{19DFB9D7-3C4C-4628-A92A-50A268B82721}.Release|x64.Build.0 = Release|x64
+		{19DFB9D7-3C4C-4628-A92A-50A268B82721}.Release|x86.ActiveCfg = Release|Win32
+		{19DFB9D7-3C4C-4628-A92A-50A268B82721}.Release|x86.Build.0 = Release|Win32
+		{7F3E6672-DBA8-4190-AF76-97BC67FB6172}.Debug|x64.ActiveCfg = Debug|x64
+		{7F3E6672-DBA8-4190-AF76-97BC67FB6172}.Debug|x64.Build.0 = Debug|x64
+		{7F3E6672-DBA8-4190-AF76-97BC67FB6172}.Debug|x86.ActiveCfg = Debug|Win32
+		{7F3E6672-DBA8-4190-AF76-97BC67FB6172}.Debug|x86.Build.0 = Debug|Win32
+		{7F3E6672-DBA8-4190-AF76-97BC67FB6172}.Release|x64.ActiveCfg = Release|x64
+		{7F3E6672-DBA8-4190-AF76-97BC67FB6172}.Release|x64.Build.0 = Release|x64
+		{7F3E6672-DBA8-4190-AF76-97BC67FB6172}.Release|x86.ActiveCfg = Release|Win32
+		{7F3E6672-DBA8-4190-AF76-97BC67FB6172}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
