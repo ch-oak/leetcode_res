@@ -37,12 +37,7 @@ public:
 	}
 };
 
-class Solution {
-public:
-	bool isPalindrome(ListNode* head) {
-		ListNode* t
-	}
-};
+
 
 int main()
 {
