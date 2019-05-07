@@ -113,6 +113,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "208. Implement Trie (Prefix
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "215. Kth Largest Element in an Array", "215. Kth Largest Element in an Array\215. Kth Largest Element in an Array.vcxproj", "{1BAE78D3-2E3E-4EF1-82F8-BF0E52C8BA1F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "221. Maximal Square", "221. Maximal Square\221. Maximal Square.vcxproj", "{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -561,6 +563,14 @@ Global
 		{1BAE78D3-2E3E-4EF1-82F8-BF0E52C8BA1F}.Release|x64.Build.0 = Release|x64
 		{1BAE78D3-2E3E-4EF1-82F8-BF0E52C8BA1F}.Release|x86.ActiveCfg = Release|Win32
 		{1BAE78D3-2E3E-4EF1-82F8-BF0E52C8BA1F}.Release|x86.Build.0 = Release|Win32
+		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Debug|x64.ActiveCfg = Debug|x64
+		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Debug|x64.Build.0 = Debug|x64
+		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Debug|x86.ActiveCfg = Debug|Win32
+		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Debug|x86.Build.0 = Debug|Win32
+		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Release|x64.ActiveCfg = Release|x64
+		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Release|x64.Build.0 = Release|x64
+		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Release|x86.ActiveCfg = Release|Win32
+		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
