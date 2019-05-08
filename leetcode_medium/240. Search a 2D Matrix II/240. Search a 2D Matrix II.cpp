@@ -11,6 +11,8 @@
 
 using namespace std;
 
+//参考：https://blog.csdn.net/jeanphorn/article/details/47028041
+//二分查找和分治法
 class Solution {
 public:
 	bool searchMatrix(vector<vector<int>>& matrix, int target) {
@@ -32,6 +34,22 @@ public:
 				else if (matrix[i][mid] < target) left = mid + 1;
 				else right = mid - 1;
 			}
+		}
+		return false;
+	}
+};
+
+class Solution {
+public:
+	bool searchMatrix(vector<vector<int>>& matrix, int target) {
+		if (matrix.empty()) return false;
+		int rows = matrix.size();
+		int cols = matrix[0].size();
+		int i = 0, j = cols - 1;//以右上角为基准
+		while (i < rows&&j >= 0) {
+			if (matrix[i][j] == target) return true;
+			else if (matrix[i][j] > target) j--;//往左找
+			else i++;//向下找
 		}
 		return false;
 	}
