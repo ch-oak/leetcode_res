@@ -115,6 +115,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "215. Kth Largest Element in
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "221. Maximal Square", "221. Maximal Square\221. Maximal Square.vcxproj", "{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "236. Lowest Common Ancestor of a Binary Tree", "236. Lowest Common Ancestor of a Binary Tree\236. Lowest Common Ancestor of a Binary Tree.vcxproj", "{F4C949C2-8246-49DF-8F35-3CD8715258DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "238. Product of Array Except Self", "238. Product of Array Except Self\238. Product of Array Except Self.vcxproj", "{48032DDF-3776-46BA-ABE3-5F04DE1A6D03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -571,6 +575,22 @@ Global
 		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Release|x64.Build.0 = Release|x64
 		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Release|x86.ActiveCfg = Release|Win32
 		{7AEE8FA9-CD72-4CF8-B161-E6EDB4CE7012}.Release|x86.Build.0 = Release|Win32
+		{F4C949C2-8246-49DF-8F35-3CD8715258DD}.Debug|x64.ActiveCfg = Debug|x64
+		{F4C949C2-8246-49DF-8F35-3CD8715258DD}.Debug|x64.Build.0 = Debug|x64
+		{F4C949C2-8246-49DF-8F35-3CD8715258DD}.Debug|x86.ActiveCfg = Debug|Win32
+		{F4C949C2-8246-49DF-8F35-3CD8715258DD}.Debug|x86.Build.0 = Debug|Win32
+		{F4C949C2-8246-49DF-8F35-3CD8715258DD}.Release|x64.ActiveCfg = Release|x64
+		{F4C949C2-8246-49DF-8F35-3CD8715258DD}.Release|x64.Build.0 = Release|x64
+		{F4C949C2-8246-49DF-8F35-3CD8715258DD}.Release|x86.ActiveCfg = Release|Win32
+		{F4C949C2-8246-49DF-8F35-3CD8715258DD}.Release|x86.Build.0 = Release|Win32
+		{48032DDF-3776-46BA-ABE3-5F04DE1A6D03}.Debug|x64.ActiveCfg = Debug|x64
+		{48032DDF-3776-46BA-ABE3-5F04DE1A6D03}.Debug|x64.Build.0 = Debug|x64
+		{48032DDF-3776-46BA-ABE3-5F04DE1A6D03}.Debug|x86.ActiveCfg = Debug|Win32
+		{48032DDF-3776-46BA-ABE3-5F04DE1A6D03}.Debug|x86.Build.0 = Debug|Win32
+		{48032DDF-3776-46BA-ABE3-5F04DE1A6D03}.Release|x64.ActiveCfg = Release|x64
+		{48032DDF-3776-46BA-ABE3-5F04DE1A6D03}.Release|x64.Build.0 = Release|x64
+		{48032DDF-3776-46BA-ABE3-5F04DE1A6D03}.Release|x86.ActiveCfg = Release|Win32
+		{48032DDF-3776-46BA-ABE3-5F04DE1A6D03}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
