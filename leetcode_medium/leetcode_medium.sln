@@ -123,6 +123,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "240. Search a 2D Matrix II"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "279. Perfect Squares", "279. Perfect Squares\279. Perfect Squares.vcxproj", "{D6BEB6B1-AB0D-4BEF-911D-FFE1E9CDC9B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "287. Find the Duplicate Number", "287. Find the Duplicate Number\287. Find the Duplicate Number.vcxproj", "{5385A68B-90FD-4BC9-90B6-EEEF4819D730}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -611,6 +613,14 @@ Global
 		{D6BEB6B1-AB0D-4BEF-911D-FFE1E9CDC9B2}.Release|x64.Build.0 = Release|x64
 		{D6BEB6B1-AB0D-4BEF-911D-FFE1E9CDC9B2}.Release|x86.ActiveCfg = Release|Win32
 		{D6BEB6B1-AB0D-4BEF-911D-FFE1E9CDC9B2}.Release|x86.Build.0 = Release|Win32
+		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Debug|x64.ActiveCfg = Debug|x64
+		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Debug|x64.Build.0 = Debug|x64
+		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Debug|x86.ActiveCfg = Debug|Win32
+		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Debug|x86.Build.0 = Debug|Win32
+		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Release|x64.ActiveCfg = Release|x64
+		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Release|x64.Build.0 = Release|x64
+		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Release|x86.ActiveCfg = Release|Win32
+		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
