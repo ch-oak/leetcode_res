@@ -1,6 +1,7 @@
 ﻿// 287. Find the Duplicate Number.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //https://leetcode.com/problems/find-the-duplicate-number/
 //找出重复数字(数字在1-n之间)
+//Tag:Array Two_Pointers Binary_Search
 
 #include "pch.h"
 #include <iostream>
