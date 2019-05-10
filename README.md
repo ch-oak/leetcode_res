@@ -1,8 +1,12 @@
 # LeetCode
 LeetCode Solution
 
-| #    | Title | Solution | Tag  |Difficulty|
-| :-- | :---------------------------------------------: | :--: | :------------------- |:---:|
+| #    | Title | Solution | Tag  | Difficulty |
+| ---- | ----- | -------- | ---- | ---------- |
+|      |       |          |      |            |
+| :--  | :---------------------------------------------: | :--: | :------------------- | :---: |
+| ---- | ----------------------------------------------- | ---- | -------------------- | ----- |
+|      |                                                 |      |                      |       |
 |206| [Reverse Linked List(反转链表)](https://leetcode.com/problems/reverse-linked-list/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/206.%20Reverse%20Linked%20List/206.%20Reverse%20Linked%20List.cpp)|Tree|Easy
 |234| [Palindrome Linked List(回文链表)](https://leetcode.com/problems/palindrome-linked-list/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/234.%20Palindrome%20Linked%20List/234.%20Palindrome%20Linked%20List.cpp)|Linked_List Two_Pointers|Easy
 |236|[ Lowest Common Ancestor of a Binary Tree(最小公共祖先）](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.cpp)|Tree|Medium
@@ -12,3 +16,5 @@ LeetCode Solution
 |283|[ Move Zeroes(移零到末尾）](https://leetcode.com/problems/move-zeroes/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/283.%20Move%20Zeroes/283.%20Move%20Zeroes.cpp)|Array Two_Pointers|Easy
 |287|[ Find the Duplicate Number(找出重复数字(数字在1-n之间)）](https://leetcode.com/problems/find-the-duplicate-number/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/287.%20Find%20the%20Duplicate%20Number/287.%20Find%20the%20Duplicate%20Number.cpp)|Array Two_Pointers Binary_Search|Medium
 |300|[ Longest Increasing Subsequence(最长递增子序列）](https://leetcode.com/problems/longest-increasing-subsequence/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/300.%20Longest%20Increasing%20Subsequence/300.%20Longest%20Increasing%20Subsequence.cpp)|Binary_Search DP|Medium
+|322|[ Coin Change(换零钱可能失败）](https://leetcode.com/problems/coin-change/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/322.%20Coin%20Change/322.%20Coin%20Change.cpp)|DP|Medium
+

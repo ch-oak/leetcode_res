@@ -1,6 +1,6 @@
 ﻿// 322. Coin Change.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //https://leetcode.com/problems/coin-change/
-//换零钱可能换不出来
+//换零钱可能换不出来，动态规划的结构与最强递增子序列类似
 //Tag:DP
 
 
