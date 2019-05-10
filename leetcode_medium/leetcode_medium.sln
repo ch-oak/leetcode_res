@@ -127,6 +127,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "287. Find the Duplicate Num
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "300. Longest Increasing Subsequence", "300. Longest Increasing Subsequence\300. Longest Increasing Subsequence.vcxproj", "{3D469A2B-9309-4626-80EC-F51C6D02E704}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "309. Best Time to Buy and Sell Stock with Cooldown", "309. Best Time to Buy and Sell Stock with Cooldown\309. Best Time to Buy and Sell Stock with Cooldown.vcxproj", "{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "322. Coin Change", "322. Coin Change\322. Coin Change.vcxproj", "{62AB18B6-B327-4493-84DF-EB9B417770D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -631,6 +635,22 @@ Global
 		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Release|x64.Build.0 = Release|x64
 		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Release|x86.ActiveCfg = Release|Win32
 		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Release|x86.Build.0 = Release|Win32
+		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Debug|x64.ActiveCfg = Debug|x64
+		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Debug|x64.Build.0 = Debug|x64
+		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Debug|x86.Build.0 = Debug|Win32
+		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Release|x64.ActiveCfg = Release|x64
+		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Release|x64.Build.0 = Release|x64
+		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Release|x86.ActiveCfg = Release|Win32
+		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Release|x86.Build.0 = Release|Win32
+		{62AB18B6-B327-4493-84DF-EB9B417770D1}.Debug|x64.ActiveCfg = Debug|x64
+		{62AB18B6-B327-4493-84DF-EB9B417770D1}.Debug|x64.Build.0 = Debug|x64
+		{62AB18B6-B327-4493-84DF-EB9B417770D1}.Debug|x86.ActiveCfg = Debug|Win32
+		{62AB18B6-B327-4493-84DF-EB9B417770D1}.Debug|x86.Build.0 = Debug|Win32
+		{62AB18B6-B327-4493-84DF-EB9B417770D1}.Release|x64.ActiveCfg = Release|x64
+		{62AB18B6-B327-4493-84DF-EB9B417770D1}.Release|x64.Build.0 = Release|x64
+		{62AB18B6-B327-4493-84DF-EB9B417770D1}.Release|x86.ActiveCfg = Release|Win32
+		{62AB18B6-B327-4493-84DF-EB9B417770D1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
