@@ -17,5 +17,5 @@ LeetCode Solution
 |287|[ Find the Duplicate Number(找出重复数字(数字在1-n之间)）](https://leetcode.com/problems/find-the-duplicate-number/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/287.%20Find%20the%20Duplicate%20Number/287.%20Find%20the%20Duplicate%20Number.cpp)|Array Two_Pointers Binary_Search|Medium
 |300|[ Longest Increasing Subsequence(最长递增子序列）](https://leetcode.com/problems/longest-increasing-subsequence/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/300.%20Longest%20Increasing%20Subsequence/300.%20Longest%20Increasing%20Subsequence.cpp)|Binary_Search DP|Medium
 |322|[ Coin Change(换零钱可能失败）](https://leetcode.com/problems/coin-change/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/322.%20Coin%20Change/322.%20Coin%20Change.cpp)|DP|Medium
-|337|[ House Robber(不能抢劫相邻的二叉树节点）](https://leetcode.com/problems/house-robber-iii/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/337.%20House%20Robber%20III/337.%20House%20Robber%20III.cpp)|Tree DPS|Medium
-
+|337|[ House Robber(不能抢劫相邻的二叉树节点)](https://leetcode.com/problems/house-robber-iii/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/337.%20House%20Robber%20III/337.%20House%20Robber%20III.cpp)|Tree DPS|Medium
+|347|[ Top K Frequent Elements(出现次数最多的k个元素)](https://leetcode.com/problems/top-k-frequent-elements/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/347.%20Top%20K%20Frequent%20Elements/347.%20Top%20K%20Frequent%20Elements.cpp)|Hash_Table Heap|Medium
