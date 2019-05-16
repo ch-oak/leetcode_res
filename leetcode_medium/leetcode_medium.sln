@@ -37,7 +37,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "36. Valid Sudoku", "36. Val
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "39. Combination Sum", "39. Combination Sum\39. Combination Sum.vcxproj", "{E3607910-198B-4C07-B2ED-8CA39FB9A88F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "40. Combination Sum II", "40. Combination Sum II\40. Combination Sum II.vcxproj", "{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "040. Combination Sum II", "40. Combination Sum II\40. Combination Sum II.vcxproj", "{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "46. Permutations", "46. Permutations\46. Permutations.vcxproj", "{C4614C5A-C31A-40A9-AB0C-7C176710F52C}"
 EndProject
@@ -138,6 +138,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "347. Top K Frequent Elements", "347. Top K Frequent Elements\347. Top K Frequent Elements.vcxproj", "{56AD407C-C98D-4FF8-9F57-E567533B6B5B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "394. Decode String", "394. Decode String\394. Decode String.vcxproj", "{2D8BEF7E-8BA6-432B-B844-D0D6269A641E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "406. Queue Reconstruction by Height", "406. Queue Reconstruction by Height\406. Queue Reconstruction by Height.vcxproj", "{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "416. Partition Equal Subset Sum", "416. Partition Equal Subset Sum\416. Partition Equal Subset Sum.vcxproj", "{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -691,6 +695,22 @@ Global
 		{2D8BEF7E-8BA6-432B-B844-D0D6269A641E}.Release|x64.Build.0 = Release|x64
 		{2D8BEF7E-8BA6-432B-B844-D0D6269A641E}.Release|x86.ActiveCfg = Release|Win32
 		{2D8BEF7E-8BA6-432B-B844-D0D6269A641E}.Release|x86.Build.0 = Release|Win32
+		{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}.Debug|x64.ActiveCfg = Debug|x64
+		{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}.Debug|x64.Build.0 = Debug|x64
+		{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}.Debug|x86.ActiveCfg = Debug|Win32
+		{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}.Debug|x86.Build.0 = Debug|Win32
+		{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}.Release|x64.ActiveCfg = Release|x64
+		{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}.Release|x64.Build.0 = Release|x64
+		{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}.Release|x86.ActiveCfg = Release|Win32
+		{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}.Release|x86.Build.0 = Release|Win32
+		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Debug|x64.ActiveCfg = Debug|x64
+		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Debug|x64.Build.0 = Debug|x64
+		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Debug|x86.ActiveCfg = Debug|Win32
+		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Debug|x86.Build.0 = Debug|Win32
+		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Release|x64.ActiveCfg = Release|x64
+		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Release|x64.Build.0 = Release|x64
+		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Release|x86.ActiveCfg = Release|Win32
+		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

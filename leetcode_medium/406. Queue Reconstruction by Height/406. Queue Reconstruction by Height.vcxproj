@@ -20,11 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D23F1E94-DFB2-4FBE-8895-4FAB5283992F}</ProjectGuid>
+    <ProjectGuid>{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My40CombinationSumII</RootNamespace>
+    <RootNamespace>My406QueueReconstructionbyHeight</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-    <ProjectName>040. Combination Sum II</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -155,7 +154,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="40. Combination Sum II.cpp" />
+    <ClCompile Include="406. Queue Reconstruction by Height.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
