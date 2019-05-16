@@ -57,6 +57,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "234. Palindrome Linked List
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "283. Move Zeroes", "283. Move Zeroes\283. Move Zeroes.vcxproj", "{ABE9C468-691D-49E2-940D-95EEDC638E7D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "437. Path Sum III", "437. Path Sum III\437. Path Sum III.vcxproj", "{912F1900-EB4A-40E3-8B80-CB0EE61D42F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -281,6 +283,14 @@ Global
 		{ABE9C468-691D-49E2-940D-95EEDC638E7D}.Release|x64.Build.0 = Release|x64
 		{ABE9C468-691D-49E2-940D-95EEDC638E7D}.Release|x86.ActiveCfg = Release|Win32
 		{ABE9C468-691D-49E2-940D-95EEDC638E7D}.Release|x86.Build.0 = Release|Win32
+		{912F1900-EB4A-40E3-8B80-CB0EE61D42F1}.Debug|x64.ActiveCfg = Debug|x64
+		{912F1900-EB4A-40E3-8B80-CB0EE61D42F1}.Debug|x64.Build.0 = Debug|x64
+		{912F1900-EB4A-40E3-8B80-CB0EE61D42F1}.Debug|x86.ActiveCfg = Debug|Win32
+		{912F1900-EB4A-40E3-8B80-CB0EE61D42F1}.Debug|x86.Build.0 = Debug|Win32
+		{912F1900-EB4A-40E3-8B80-CB0EE61D42F1}.Release|x64.ActiveCfg = Release|x64
+		{912F1900-EB4A-40E3-8B80-CB0EE61D42F1}.Release|x64.Build.0 = Release|x64
+		{912F1900-EB4A-40E3-8B80-CB0EE61D42F1}.Release|x86.ActiveCfg = Release|Win32
+		{912F1900-EB4A-40E3-8B80-CB0EE61D42F1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
