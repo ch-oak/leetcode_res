@@ -19,3 +19,6 @@ LeetCode Solution
 |322|[ Coin Change(换零钱可能失败）](https://leetcode.com/problems/coin-change/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/322.%20Coin%20Change/322.%20Coin%20Change.cpp)|DP|Medium
 |337|[ House Robber(不能抢劫相邻的二叉树节点)](https://leetcode.com/problems/house-robber-iii/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/337.%20House%20Robber%20III/337.%20House%20Robber%20III.cpp)|Tree DPS|Medium
 |347|[ Top K Frequent Elements(出现次数最多的k个元素)](https://leetcode.com/problems/top-k-frequent-elements/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/347.%20Top%20K%20Frequent%20Elements/347.%20Top%20K%20Frequent%20Elements.cpp)|Hash_Table Heap|Medium
+|406|[ Queue Reconstruction by Height(重排队列)](https://leetcode.com/problems/queue-reconstruction-by-height/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/406.%20Queue%20Reconstruction%20by%20Height/406.%20Queue%20Reconstruction%20by%20Height.cpp)|Greedy
+|416|[ Partition Equal Subset Sum(平分数组)](https://leetcode.com/problems/partition-equal-subset-sum/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/416.%20Partition%20Equal%20Subset%20Sum/416.%20Partition%20Equal%20Subset%20Sum.cpp)|DP
+

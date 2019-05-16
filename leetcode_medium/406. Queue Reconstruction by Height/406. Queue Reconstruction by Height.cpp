@@ -1,6 +1,7 @@
 ﻿// 406. Queue Reconstruction by Height.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //https://leetcode.com/problems/queue-reconstruction-by-height/
 //重建队列
+//Tag:Greedy
 //元素1表示高度，元素2表示前面队列不比元素1高的元素的数目
 #include "pch.h"
 #include <iostream>

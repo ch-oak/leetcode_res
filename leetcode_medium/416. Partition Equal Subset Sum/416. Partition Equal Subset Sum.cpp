@@ -1,4 +1,4 @@
-﻿// 416. Partition Equal Subset Sum.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿// 416. .cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //https://leetcode.com/problems/partition-equal-subset-sum/
 //能否将数组分为和相等的两个子集
 
