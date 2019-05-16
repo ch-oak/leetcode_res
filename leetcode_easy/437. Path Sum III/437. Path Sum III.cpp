@@ -12,6 +12,8 @@ struct TreeNode {
 	TreeNode(int x):val(x),left(NULL),right(NULL){}
 };
 
+
+//参考：https://leetcode.com/problems/path-sum-iii/discuss/91889/Simple-Java-DFS
 class Solution {
 public:
 	int pathSum(TreeNode* root, int sum) {
