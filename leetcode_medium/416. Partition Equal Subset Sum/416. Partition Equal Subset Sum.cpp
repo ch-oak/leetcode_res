@@ -17,6 +17,7 @@ public:
 	bool canPartition(vector<int>& nums) {
 		if (nums.empty())
 			return true;
+
 		int maxEle = *max_element(nums.begin(), nums.end());
 		int sum = 0;
 		for (int i = 0; i < nums.size(); i++)
