@@ -1,5 +1,7 @@
 ﻿// 394. Decode String.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+//https://leetcode.com/problems/decode-string/submissions/
+//解码字符串
+//Stack DPS
 
 #include "pch.h"
 #include <iostream>
@@ -8,38 +10,35 @@
 #include <string>
 using namespace std;
 
+//https://leetcode.com/problems/decode-string/discuss/87543/0ms-simple-C%2B%2B-solution
+
 class Solution {
 public:
 	string decodeString(string s) {
-		stack<pair<int, int>> brack;
-		string temp, res;
-		int pos = 0;
-		while (pos < s.size()) {
-			if (isdigit(s[pos])) {
-				string num;
-				num += s[pos];
-				while (pos + 1 < s.size() && isdigit(s[++pos]))
-					num += s[pos];
-				
-				brack.push(make_pair(s[pos],))
-			}
-		}
+		int i = 0;
+		string res = decodeString(s, i);
+		return res;
 	}
 private:
-	string decodeString(string &s, int i) {
+	string decodeString(string &s, int &i) {
 		string res;
 		while (i < s.size() && s[i] != ']') {
 			if (!isdigit(s[i]))
-				res += s[i];
+				res += s[i++];
 			else {
 				string numStr;
 				while (i < s.size() && isdigit(s[i]))
 					numStr += s[i++];
 				int num = stoi(numStr);
+				i++;
 				string temp = decodeString(s, i);
-				n
+				i++;
+				while (num-- > 0) {
+					res += temp;
+				}
 			}
 		}
+		return res;
 	}
 };
 
