@@ -60,7 +60,7 @@ private:
 			res.push_back(nums);
 			return;
 		}
-		for (int i = beg; i < nums.size(); i++) {
+		for (int i = beg; i < nums.size(); i++) {//beg和beg之后的元素逐一与beg交换
 			swap(nums[beg], nums[i]);
 			backtracking(res, nums, beg + 1);
 			swap(nums[beg], nums[i]);
