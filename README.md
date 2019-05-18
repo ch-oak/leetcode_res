@@ -22,4 +22,5 @@ LeetCode Solution
 |406|[ Queue Reconstruction by Height(重排队列)](https://leetcode.com/problems/queue-reconstruction-by-height/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/406.%20Queue%20Reconstruction%20by%20Height/406.%20Queue%20Reconstruction%20by%20Height.cpp)|Greedy|Medium
 |416|[ Partition Equal Subset Sum(平分数组)](https://leetcode.com/problems/partition-equal-subset-sum/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/416.%20Partition%20Equal%20Subset%20Sum/416.%20Partition%20Equal%20Subset%20Sum.cpp)|DP|Medium
 |437|[  Path Sum III(和为指定值的路径数目)](https://leetcode.com/problems/path-sum-iii/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/437.%20Path%20Sum%20III/437.%20Path%20Sum%20III.cpp)|Tree|Easy
+|438|[  Find All Anagrams in a String(找出所有异序次出现位置)](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[C++](https://github.com/ch-oak/leetcode_res/tree/master/leetcode_easy/438.%20Find%20All%20Anagrams%20in%20a%20String)|Hash Table|Easy
 

@@ -1,6 +1,7 @@
 ﻿// 438. Find All Anagrams in a String.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+//https://leetcode.com/problems/find-all-anagrams-in-a-string/
 //找出所有异序次出现位置
-//
+//Tag:Hash Table
 
 #include "pch.h"
 #include <iostream>
