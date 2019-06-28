@@ -145,6 +145,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "416. Partition Equal Subset
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "146. LRU Cache", "146. LRU Cache\146. LRU Cache.vcxproj", "{2AEA4496-39D4-400F-992F-3D9D173AF110}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "560. Subarray Sum Equals K", "560. Subarray Sum Equals K\560. Subarray Sum Equals K.vcxproj", "{3E8D212B-6219-4432-AA1C-FA86F4A49680}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -721,6 +723,14 @@ Global
 		{2AEA4496-39D4-400F-992F-3D9D173AF110}.Release|x64.Build.0 = Release|x64
 		{2AEA4496-39D4-400F-992F-3D9D173AF110}.Release|x86.ActiveCfg = Release|Win32
 		{2AEA4496-39D4-400F-992F-3D9D173AF110}.Release|x86.Build.0 = Release|Win32
+		{3E8D212B-6219-4432-AA1C-FA86F4A49680}.Debug|x64.ActiveCfg = Debug|x64
+		{3E8D212B-6219-4432-AA1C-FA86F4A49680}.Debug|x64.Build.0 = Debug|x64
+		{3E8D212B-6219-4432-AA1C-FA86F4A49680}.Debug|x86.ActiveCfg = Debug|Win32
+		{3E8D212B-6219-4432-AA1C-FA86F4A49680}.Debug|x86.Build.0 = Debug|Win32
+		{3E8D212B-6219-4432-AA1C-FA86F4A49680}.Release|x64.ActiveCfg = Release|x64
+		{3E8D212B-6219-4432-AA1C-FA86F4A49680}.Release|x64.Build.0 = Release|x64
+		{3E8D212B-6219-4432-AA1C-FA86F4A49680}.Release|x86.ActiveCfg = Release|Win32
+		{3E8D212B-6219-4432-AA1C-FA86F4A49680}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
