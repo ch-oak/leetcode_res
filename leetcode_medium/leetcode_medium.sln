@@ -53,8 +53,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "59. Spiral Matrix II", "59.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "54. Spiral Matrix", "54. Spiral Matrix\54. Spiral Matrix.vcxproj", "{2E055FC4-9626-4D50-B944-3680858B5523}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "55. Jump Game", "55. Jump Game\55. Jump Game.vcxproj", "{6102D0D9-CFAA-4657-AF63-F76A9659CE24}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "60. Permutation Sequence", "60. Permutation Sequence\60. Permutation Sequence.vcxproj", "{7956BF29-61C1-4D07-99D1-9020C6EE0B49}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "56. Merge Intervals", "56. Merge Intervals\56. Merge Intervals.vcxproj", "{00551A71-32D2-439D-B9ED-C0176A039BC6}"
@@ -142,6 +140,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "406. Queue Reconstruction by Height", "406. Queue Reconstruction by Height\406. Queue Reconstruction by Height.vcxproj", "{6CE16B2E-65C5-42EF-AAE4-F92286789E6F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "416. Partition Equal Subset Sum", "416. Partition Equal Subset Sum\416. Partition Equal Subset Sum.vcxproj", "{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "055. Jump Game", "055. Jump Game\055. Jump Game.vcxproj", "{A7C84083-A380-4B72-9FF2-1406A46F82B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -351,14 +351,6 @@ Global
 		{2E055FC4-9626-4D50-B944-3680858B5523}.Release|x64.Build.0 = Release|x64
 		{2E055FC4-9626-4D50-B944-3680858B5523}.Release|x86.ActiveCfg = Release|Win32
 		{2E055FC4-9626-4D50-B944-3680858B5523}.Release|x86.Build.0 = Release|Win32
-		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Debug|x64.ActiveCfg = Debug|x64
-		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Debug|x64.Build.0 = Debug|x64
-		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Debug|x86.ActiveCfg = Debug|Win32
-		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Debug|x86.Build.0 = Debug|Win32
-		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Release|x64.ActiveCfg = Release|x64
-		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Release|x64.Build.0 = Release|x64
-		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Release|x86.ActiveCfg = Release|Win32
-		{6102D0D9-CFAA-4657-AF63-F76A9659CE24}.Release|x86.Build.0 = Release|Win32
 		{7956BF29-61C1-4D07-99D1-9020C6EE0B49}.Debug|x64.ActiveCfg = Debug|x64
 		{7956BF29-61C1-4D07-99D1-9020C6EE0B49}.Debug|x64.Build.0 = Debug|x64
 		{7956BF29-61C1-4D07-99D1-9020C6EE0B49}.Debug|x86.ActiveCfg = Debug|Win32
@@ -711,6 +703,14 @@ Global
 		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Release|x64.Build.0 = Release|x64
 		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Release|x86.ActiveCfg = Release|Win32
 		{B8B64F27-A14D-4E8E-A4A0-74706FC033A0}.Release|x86.Build.0 = Release|Win32
+		{A7C84083-A380-4B72-9FF2-1406A46F82B6}.Debug|x64.ActiveCfg = Debug|x64
+		{A7C84083-A380-4B72-9FF2-1406A46F82B6}.Debug|x64.Build.0 = Debug|x64
+		{A7C84083-A380-4B72-9FF2-1406A46F82B6}.Debug|x86.ActiveCfg = Debug|Win32
+		{A7C84083-A380-4B72-9FF2-1406A46F82B6}.Debug|x86.Build.0 = Debug|Win32
+		{A7C84083-A380-4B72-9FF2-1406A46F82B6}.Release|x64.ActiveCfg = Release|x64
+		{A7C84083-A380-4B72-9FF2-1406A46F82B6}.Release|x64.Build.0 = Release|x64
+		{A7C84083-A380-4B72-9FF2-1406A46F82B6}.Release|x86.ActiveCfg = Release|Win32
+		{A7C84083-A380-4B72-9FF2-1406A46F82B6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,6 @@
-﻿// 45. Jump Game II.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿// 045. Jump Game II.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+//https://leetcode.com/problems/jump-game-ii/
+//跳跃游戏升级，记录次数
 //给定一串非负整数，每个数代表能跳跃的最大长度，返回跳到尾巴的最少步数 。
 
 #include "pch.h"
@@ -34,21 +36,29 @@ public:
 	}
 };
 
+class Solution1 {
+public:
+	int jump(vector<int>& nums) {
+		int start = 0, end = 0, res = 0;
+		while (end < nums.size() - 1) {
+			int max_pos = 0;
+			//计算下一个范围的终点
+			for (int i = start; i <= end; i++) {
+				max_pos = max(max_pos, i + nums[i]);
+			}
+			start = end + 1;//下一个范围的起点为当前终点+1
+			end = max_pos;
+			res++;//移动一个范围
+		}
+		return res;
+	}
+};
+
+
 
 int main()
 {
 	vector<int> nums = { 5,9,3,2,1,0,2,3,3,1,0,0 };
 	cout << Solution().jump(nums) << endl;
-    std::cout << "Hello World!\n"; 
+	std::cout << "Hello World!\n";
 }
-
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
-
-// 入门提示: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件

@@ -29,8 +29,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "42. Trapping Rain Water", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "44. Wildcard Matching", "44. Wildcard Matching\44. Wildcard Matching.vcxproj", "{2E0E3D9F-08B9-4DC2-AACB-6DD6E096E290}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "45. Jump Game II", "45. Jump Game II\45. Jump Game II.vcxproj", "{7E6788BA-4817-4679-B388-528827757FEF}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "52. N-Queens II", "52. N-Queens II\52. N-Queens II.vcxproj", "{5C9626B7-0C2B-40D1-BC6C-0A638ABE4E80}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "65. Valid Number", "65. Valid Number\65. Valid Number.vcxproj", "{131C2838-5564-4451-BEFC-2BEBACCFBC82}"
@@ -42,6 +40,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "84. Largest Rectangle in Histogram", "84. Largest Rectangle in Histogram\84. Largest Rectangle in Histogram.vcxproj", "{06B40C54-FF17-4A1F-B84C-A32AE975C2D4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "85. Maximal Rectangle", "85. Maximal Rectangle\85. Maximal Rectangle.vcxproj", "{52698498-4FD8-4106-82F0-089BA2F702C7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "045. Jump Game II", "045. Jump Game II\045. Jump Game II.vcxproj", "{72E81663-886C-450C-9CA1-300501C80FA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -155,14 +155,6 @@ Global
 		{2E0E3D9F-08B9-4DC2-AACB-6DD6E096E290}.Release|x64.Build.0 = Release|x64
 		{2E0E3D9F-08B9-4DC2-AACB-6DD6E096E290}.Release|x86.ActiveCfg = Release|Win32
 		{2E0E3D9F-08B9-4DC2-AACB-6DD6E096E290}.Release|x86.Build.0 = Release|Win32
-		{7E6788BA-4817-4679-B388-528827757FEF}.Debug|x64.ActiveCfg = Debug|x64
-		{7E6788BA-4817-4679-B388-528827757FEF}.Debug|x64.Build.0 = Debug|x64
-		{7E6788BA-4817-4679-B388-528827757FEF}.Debug|x86.ActiveCfg = Debug|Win32
-		{7E6788BA-4817-4679-B388-528827757FEF}.Debug|x86.Build.0 = Debug|Win32
-		{7E6788BA-4817-4679-B388-528827757FEF}.Release|x64.ActiveCfg = Release|x64
-		{7E6788BA-4817-4679-B388-528827757FEF}.Release|x64.Build.0 = Release|x64
-		{7E6788BA-4817-4679-B388-528827757FEF}.Release|x86.ActiveCfg = Release|Win32
-		{7E6788BA-4817-4679-B388-528827757FEF}.Release|x86.Build.0 = Release|Win32
 		{5C9626B7-0C2B-40D1-BC6C-0A638ABE4E80}.Debug|x64.ActiveCfg = Debug|x64
 		{5C9626B7-0C2B-40D1-BC6C-0A638ABE4E80}.Debug|x64.Build.0 = Debug|x64
 		{5C9626B7-0C2B-40D1-BC6C-0A638ABE4E80}.Debug|x86.ActiveCfg = Debug|Win32
@@ -211,6 +203,14 @@ Global
 		{52698498-4FD8-4106-82F0-089BA2F702C7}.Release|x64.Build.0 = Release|x64
 		{52698498-4FD8-4106-82F0-089BA2F702C7}.Release|x86.ActiveCfg = Release|Win32
 		{52698498-4FD8-4106-82F0-089BA2F702C7}.Release|x86.Build.0 = Release|Win32
+		{72E81663-886C-450C-9CA1-300501C80FA1}.Debug|x64.ActiveCfg = Debug|x64
+		{72E81663-886C-450C-9CA1-300501C80FA1}.Debug|x64.Build.0 = Debug|x64
+		{72E81663-886C-450C-9CA1-300501C80FA1}.Debug|x86.ActiveCfg = Debug|Win32
+		{72E81663-886C-450C-9CA1-300501C80FA1}.Debug|x86.Build.0 = Debug|Win32
+		{72E81663-886C-450C-9CA1-300501C80FA1}.Release|x64.ActiveCfg = Release|x64
+		{72E81663-886C-450C-9CA1-300501C80FA1}.Release|x64.Build.0 = Release|x64
+		{72E81663-886C-450C-9CA1-300501C80FA1}.Release|x86.ActiveCfg = Release|Win32
+		{72E81663-886C-450C-9CA1-300501C80FA1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
