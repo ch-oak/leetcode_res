@@ -7,6 +7,7 @@ LeetCode Solution
 | :--  | :---------------------------------------------: | :--: | :------------------- | :---: |
 | ---- | ----------------------------------------------- | ---- | -------------------- | ----- |
 |      |                                                 |      |                      |       |
+|102| [Binary Tree Level Order Traversalon1(二叉树的层序遍历)](https://leetcode.com/problems/reverse-linked-list/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/102.%20Binary%20Tree%20Level%20Order%20Traversalon1/102.%20Binary%20Tree%20Level%20Order%20Traversalon1.cpp)|Tree BFS|Medium
 |206| [Reverse Linked List(反转链表)](https://leetcode.com/problems/reverse-linked-list/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/206.%20Reverse%20Linked%20List/206.%20Reverse%20Linked%20List.cpp)|Tree|Easy
 |234| [Palindrome Linked List(回文链表)](https://leetcode.com/problems/palindrome-linked-list/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/234.%20Palindrome%20Linked%20List/234.%20Palindrome%20Linked%20List.cpp)|Linked_List Two_Pointers|Easy
 |236|[ Lowest Common Ancestor of a Binary Tree(最小公共祖先）](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.cpp)|Tree|Medium
@@ -22,4 +23,5 @@ LeetCode Solution
 |406|[ Queue Reconstruction by Height(重排队列)](https://leetcode.com/problems/queue-reconstruction-by-height/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/406.%20Queue%20Reconstruction%20by%20Height/406.%20Queue%20Reconstruction%20by%20Height.cpp)|Greedy|Medium
 |416|[ Partition Equal Subset Sum(平分数组)](https://leetcode.com/problems/partition-equal-subset-sum/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/416.%20Partition%20Equal%20Subset%20Sum/416.%20Partition%20Equal%20Subset%20Sum.cpp)|DP|Medium
 |437|[  Path Sum III(和为指定值的路径数目)](https://leetcode.com/problems/path-sum-iii/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/437.%20Path%20Sum%20III/437.%20Path%20Sum%20III.cpp)|Tree|Easy
+|438|[  Find All Anagrams in a String(找出所有异序次出现位置)](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[C++](https://github.com/ch-oak/leetcode_res/tree/master/leetcode_easy/438.%20Find%20All%20Anagrams%20in%20a%20String)|Hash Table|Easy
 
