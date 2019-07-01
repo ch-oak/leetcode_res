@@ -1,6 +1,10 @@
-﻿// 37. Sudoku Solver.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿// 0037. Sudoku Solver.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+//解数独
+//HashTable BackTracking
+//Hard
 //解数独，使得9×9的表格中，每行，每列，每个block中的数字不重复
-//Tag: HashTable BackTracking
+//https://leetcode.com/problems/sudoku-solver/
+
 
 #include "pch.h"
 #include <iostream>
@@ -41,7 +45,7 @@ private:
 		}
 		return true;
 	}
-	bool isValid(vector<vector<char>>& board,char c,int row,int col) {
+	bool isValid(vector<vector<char>>& board, char c, int row, int col) {
 		for (int i = 0; i < 9; i++) {
 			if (board[row][i] != '.'&&board[row][i] == c) return false;//检查行
 			if (board[i][col] != '.'&&board[i][col] == c) return false;//检查列
