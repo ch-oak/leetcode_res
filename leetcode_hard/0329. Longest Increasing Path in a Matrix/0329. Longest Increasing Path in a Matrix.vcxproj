@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{82A13173-1F85-4836-B0A8-EF98358A55FE}</ProjectGuid>
+    <ProjectGuid>{3C7E39C8-652B-4DC1-990D-A9152C50A5FF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My25ReverseNodesinkGroup</RootNamespace>
+    <RootNamespace>My0329LongestIncreasingPathinaMatrix</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,7 +154,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="25. Reverse Nodes in k-Group.cpp" />
+    <ClCompile Include="0329. Longest Increasing Path in a Matrix.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
