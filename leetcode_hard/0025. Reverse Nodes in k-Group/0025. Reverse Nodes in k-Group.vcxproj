@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{38639374-F9DE-4C54-9F53-976E243C9EC2}</ProjectGuid>
+    <ProjectGuid>{CDEFF92B-61AC-4A78-AEA5-E2AFCA82B94B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My23MergekSortedLists</RootNamespace>
+    <RootNamespace>My0025ReverseNodesinkGroup</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,7 +154,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="23. Merge k Sorted Lists.cpp" />
+    <ClCompile Include="0025. Reverse Nodes in k-Group.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

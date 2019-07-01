@@ -1,6 +1,8 @@
-﻿// 30. Substring with Concatenation of All Words.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿// 0030. Substring with Concatenation of All Words.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+//连接所有单词的子字符串
+//Hash Table Two Pointer String
 //给定字符串s,和一串words，找出所有包含所有words的位置
-
+//https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 #include "pch.h"
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
@@ -47,7 +49,7 @@ public:
 		set<int> seq;
 		dfs(res, seq, all_pos, 0);
 
-		return vector<int>(res.begin(),res.end());
+		return vector<int>(res.begin(), res.end());
 
 	}
 private:
@@ -56,7 +58,7 @@ private:
 	int word_len;
 	bool get_pos(string &s, string &word, vector<int> &w_pos) {
 		string::size_type pos = 0;
-		while ((pos = s.find(word,pos)) != string::npos) {
+		while ((pos = s.find(word, pos)) != string::npos) {
 			w_pos.push_back(pos);
 			pos++;
 		}
@@ -68,7 +70,7 @@ private:
 	void dfs(set<int> &res, set<int> seq, vector<vector<int>> &all_pos, int i) {//想要seq递归调用的时候增加，递归回来的时候又复原，应该不能用引用
 		if (i > len)
 			return;
-		if(!seq.empty()&&(*seq.rbegin()-*seq.begin()>word_len*(len-1)))
+		if (!seq.empty() && (*seq.rbegin() - *seq.begin() > word_len*(len - 1)))
 			return;
 		if (seq.size() == len) {
 			auto front = seq.begin();
@@ -79,7 +81,7 @@ private:
 				++front;
 				++cur;
 			}
-			if(cur==seq.end())
+			if (cur == seq.end())
 				res.insert(*seq.begin());
 			return;
 		}
@@ -113,8 +115,8 @@ public:
 		for (int i = 0; i < n - num * len + 1; i++) {
 			unordered_map<string, int> seen;
 			int j = 0;
-			for (; j < num ; j++) {
-				string temp = s.substr(i+j*len, len);
+			for (; j < num; j++) {
+				string temp = s.substr(i + j * len, len);
 				if (count.find(temp) != count.end()) {
 					seen[temp]++;
 					if (seen[temp] > count[temp])
@@ -138,17 +140,16 @@ int main()
 	while (cin >> s) {
 		vector<string> words;
 		string line;
+		getline(cin, line);//读取空格
 		getline(cin, line);
-		getline(cin, line); 
 		stringstream ss(line);
 		string temp;
-		while (getline(ss, temp, ',') )
+		while (getline(ss, temp, ','))
 			words.push_back(temp);
-		
+
 		auto res = sol.findSubstring(s, words);
 		for (auto a : res)
 			cout << a << " ";
 		cout << endl;
 	}
 }
-

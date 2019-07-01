@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{6863B7EE-FB3F-465C-B2BA-CD2493857353}</ProjectGuid>
+    <ProjectGuid>{BF767CEB-6AFA-4455-946E-2D89FDAA297B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My135Candy</RootNamespace>
+    <RootNamespace>My0010RegularExpressionMatching</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,7 +154,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="135. Candy.cpp" />
+    <ClCompile Include="0010. Regular Expression Matching.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

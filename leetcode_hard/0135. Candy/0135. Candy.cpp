@@ -1,5 +1,7 @@
-﻿// 135. Candy.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+﻿// 0135. Candy.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //分糖果
+//Greedy
+//Hard
 //根据分数分糖果，每个同学至少分到一个糖果，并且如果分数比相邻同学高，糖果也要比相邻同学多
 //https://leetcode.com/problems/candy/
 
@@ -56,5 +58,5 @@ public:
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	std::cout << "Hello World!\n";
 }

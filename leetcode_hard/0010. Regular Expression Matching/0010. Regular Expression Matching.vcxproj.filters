@@ -23,7 +23,7 @@
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="10. Regular Expression Matching.cpp">
+    <ClCompile Include="0010. Regular Expression Matching.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

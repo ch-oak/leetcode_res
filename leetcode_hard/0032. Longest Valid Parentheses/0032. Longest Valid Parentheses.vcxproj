@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{72E81663-886C-450C-9CA1-300501C80FA1}</ProjectGuid>
+    <ProjectGuid>{8C0D8347-A0E0-4622-BF07-935A18ACDA0C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My045JumpGameII</RootNamespace>
+    <RootNamespace>My0032LongestValidParentheses</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,7 +154,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="045. Jump Game II.cpp" />
+    <ClCompile Include="0032. Longest Valid Parentheses.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{0FA61AC3-0E45-4BC4-B8CC-3C3F5C0CB911}</ProjectGuid>
+    <ProjectGuid>{35C89729-27D6-4C6A-B74C-5DADB76B28E9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My164MaximumGap</RootNamespace>
+    <RootNamespace>My0030SubstringwithConcatenationofAllWords</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,7 +154,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="164. Maximum Gap.cpp" />
+    <ClCompile Include="0030. Substring with Concatenation of All Words.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

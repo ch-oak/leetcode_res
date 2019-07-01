@@ -23,7 +23,7 @@
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="30. Substring with Concatenation of All Words.cpp">
+    <ClCompile Include="0023. Merge k Sorted Lists.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

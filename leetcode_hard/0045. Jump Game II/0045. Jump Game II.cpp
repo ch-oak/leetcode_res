@@ -1,7 +1,11 @@
-﻿// 045. Jump Game II.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//https://leetcode.com/problems/jump-game-ii/
+﻿// 0045. Jump Game II.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+//跳跃游戏II
+//Array Greedy
+//Hard
 //跳跃游戏升级，记录次数
 //给定一串非负整数，每个数代表能跳跃的最大长度，返回跳到尾巴的最少步数 。
+//https://leetcode.com/problems/jump-game-ii/
+
 
 #include "pch.h"
 #include <iostream>

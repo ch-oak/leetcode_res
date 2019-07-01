@@ -1,7 +1,9 @@
-﻿// 25. Reverse Nodes in k-Group.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-
+﻿// 0025. Reverse Nodes in k-Group.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+//k链表翻转
+//Linked List
+//Hard
 //给定一个链表和数字k，k个k个的反转
-
+//https://leetcode.com/problems/reverse-nodes-in-k-group/
 #include "pch.h"
 #include <iostream>
 #include <vector>
@@ -28,14 +30,14 @@ public:
 		ListNode* left = dummy;
 		ListNode* cur = head;
 		ListNode*  right;
-	
+
 		int i = 0;
 		while (cur) {
 			ListNode *tmp = cur;
-			for (i = 1; i < k && cur; i++) 
-					cur = cur->next;
-			
-			if (i == k&&cur!=NULL) {
+			for (i = 1; i < k && cur; i++)
+				cur = cur->next;
+
+			if (i == k && cur != NULL) {
 				right = cur->next;
 				ListNode* pre = left->next;
 				cur = pre->next;
@@ -47,13 +49,13 @@ public:
 				}
 
 				left = pre;
-		
+
 
 
 			}
 			else
 				break;
-			
+
 		}
 		return dummy->next;
 	}
@@ -75,7 +77,6 @@ int main()
 		cout << res->val << ",";
 		res = res->next;
 	}
-    std::cout << "Hello World!\n"; 
+	std::cout << "Hello World!\n";
 }
-
 
