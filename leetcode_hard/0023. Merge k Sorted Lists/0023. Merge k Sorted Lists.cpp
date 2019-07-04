@@ -124,7 +124,7 @@ public:
 			if (!pre) head = tmp;
 			else pre->next = tmp;
 			pre = tmp;
-			if (tmp->next) q.push(tmp->next);
+			if (tmp->next) q.push(tmp->next);//将链表的下一个节点继续放入优先队列中去
 		}
 		return head;
 	}
