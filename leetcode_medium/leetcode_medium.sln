@@ -123,8 +123,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "279. Perfect Squares", "279
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "287. Find the Duplicate Number", "287. Find the Duplicate Number\287. Find the Duplicate Number.vcxproj", "{5385A68B-90FD-4BC9-90B6-EEEF4819D730}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "300. Longest Increasing Subsequence", "300. Longest Increasing Subsequence\300. Longest Increasing Subsequence.vcxproj", "{3D469A2B-9309-4626-80EC-F51C6D02E704}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "309. Best Time to Buy and Sell Stock with Cooldown", "309. Best Time to Buy and Sell Stock with Cooldown\309. Best Time to Buy and Sell Stock with Cooldown.vcxproj", "{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "322. Coin Change", "322. Coin Change\322. Coin Change.vcxproj", "{62AB18B6-B327-4493-84DF-EB9B417770D1}"
@@ -146,6 +144,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0005. Longest Palindromic Substring", "0005. Longest Palindromic Substring\0005. Longest Palindromic Substring.vcxproj", "{3B05E6F3-F7DA-4C06-AA66-863FC704D578}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1143. Longest Common Subsequence", "1143. Longest Common Subsequence\1143. Longest Common Subsequence.vcxproj", "{47E77E7C-C37E-4B29-ADCE-0E4B71F5F92E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0300. Longest Increasing Subsequence", "0300. Longest Increasing Subsequence\0300. Longest Increasing Subsequence.vcxproj", "{E273D273-28B3-45C2-BAAB-44E9656690EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -635,14 +635,6 @@ Global
 		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Release|x64.Build.0 = Release|x64
 		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Release|x86.ActiveCfg = Release|Win32
 		{5385A68B-90FD-4BC9-90B6-EEEF4819D730}.Release|x86.Build.0 = Release|Win32
-		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Debug|x64.ActiveCfg = Debug|x64
-		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Debug|x64.Build.0 = Debug|x64
-		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Debug|x86.ActiveCfg = Debug|Win32
-		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Debug|x86.Build.0 = Debug|Win32
-		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Release|x64.ActiveCfg = Release|x64
-		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Release|x64.Build.0 = Release|x64
-		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Release|x86.ActiveCfg = Release|Win32
-		{3D469A2B-9309-4626-80EC-F51C6D02E704}.Release|x86.Build.0 = Release|Win32
 		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Debug|x64.ActiveCfg = Debug|x64
 		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Debug|x64.Build.0 = Debug|x64
 		{EC68B4F4-CB3C-47CC-833E-9E1DE7FE2A9C}.Debug|x86.ActiveCfg = Debug|Win32
@@ -731,6 +723,14 @@ Global
 		{47E77E7C-C37E-4B29-ADCE-0E4B71F5F92E}.Release|x64.Build.0 = Release|x64
 		{47E77E7C-C37E-4B29-ADCE-0E4B71F5F92E}.Release|x86.ActiveCfg = Release|Win32
 		{47E77E7C-C37E-4B29-ADCE-0E4B71F5F92E}.Release|x86.Build.0 = Release|Win32
+		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Debug|x64.ActiveCfg = Debug|x64
+		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Debug|x64.Build.0 = Debug|x64
+		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Debug|x86.ActiveCfg = Debug|Win32
+		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Debug|x86.Build.0 = Debug|Win32
+		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Release|x64.ActiveCfg = Release|x64
+		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Release|x64.Build.0 = Release|x64
+		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Release|x86.ActiveCfg = Release|Win32
+		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

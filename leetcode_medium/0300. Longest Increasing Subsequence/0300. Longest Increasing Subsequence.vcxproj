@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{3D469A2B-9309-4626-80EC-F51C6D02E704}</ProjectGuid>
+    <ProjectGuid>{E273D273-28B3-45C2-BAAB-44E9656690EE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My300LongestIncreasingSubsequence</RootNamespace>
+    <RootNamespace>My0300LongestIncreasingSubsequence</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,7 +154,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="300. Longest Increasing Subsequence.cpp" />
+    <ClCompile Include="0300. Longest Increasing Subsequence.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
