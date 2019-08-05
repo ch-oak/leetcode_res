@@ -147,6 +147,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1143. Longest Common Subseq
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0300. Longest Increasing Subsequence", "0300. Longest Increasing Subsequence\0300. Longest Increasing Subsequence.vcxproj", "{E273D273-28B3-45C2-BAAB-44E9656690EE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0743. Network Delay Time", "0743. Network Delay Time\0743. Network Delay Time.vcxproj", "{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -731,6 +733,14 @@ Global
 		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Release|x64.Build.0 = Release|x64
 		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Release|x86.ActiveCfg = Release|Win32
 		{E273D273-28B3-45C2-BAAB-44E9656690EE}.Release|x86.Build.0 = Release|Win32
+		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Debug|x64.ActiveCfg = Debug|x64
+		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Debug|x64.Build.0 = Debug|x64
+		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Debug|x86.ActiveCfg = Debug|Win32
+		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Debug|x86.Build.0 = Debug|Win32
+		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Release|x64.ActiveCfg = Release|x64
+		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Release|x64.Build.0 = Release|x64
+		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Release|x86.ActiveCfg = Release|Win32
+		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
