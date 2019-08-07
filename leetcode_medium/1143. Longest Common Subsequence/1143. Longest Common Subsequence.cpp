@@ -11,7 +11,7 @@
 
 using namespace std;
 
-
+//最长公共子串，res[i][j]对应的是以i,j作为子串尾元素的最长子串，并不是前i个字母，text2前j个字母的最长子串
 class Solution {
 public:
 	int longestCommonSubsequence(string text1, string text2) {
@@ -20,7 +20,7 @@ public:
 		vector<vector<int>> res(rows + 1, vector<int>(cols + 1, 0));//增加一行0和一列0来处理边界
 		for (int i = 1; i <= rows; i++) {
 			for (int j = 1; j <= cols; j++) {
-				if (text1[i - 1] == text2[j - 1]) {//res[i][j]对应以text1前i个字母，text2前j-1个字母的最长公共子串
+				if (text1[i - 1] == text2[j - 1]) {//res[i][j]对应以text1前i个字母，text2前j个字母的最长公共序列
 					res[i][j] = res[i - 1][j - 1] + 1;
 				}
 				else {
