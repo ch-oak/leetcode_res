@@ -149,6 +149,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0300. Longest Increasing Su
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0743. Network Delay Time", "0743. Network Delay Time\0743. Network Delay Time.vcxproj", "{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0148. Sort List", "0148. Sort List\0148. Sort List.vcxproj", "{4B3A292E-16E4-4663-BCF4-5891D31EEFEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -741,6 +743,14 @@ Global
 		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Release|x64.Build.0 = Release|x64
 		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Release|x86.ActiveCfg = Release|Win32
 		{8A1A52CF-BBA3-4527-A6E2-A72A23B784D9}.Release|x86.Build.0 = Release|Win32
+		{4B3A292E-16E4-4663-BCF4-5891D31EEFEF}.Debug|x64.ActiveCfg = Debug|x64
+		{4B3A292E-16E4-4663-BCF4-5891D31EEFEF}.Debug|x64.Build.0 = Debug|x64
+		{4B3A292E-16E4-4663-BCF4-5891D31EEFEF}.Debug|x86.ActiveCfg = Debug|Win32
+		{4B3A292E-16E4-4663-BCF4-5891D31EEFEF}.Debug|x86.Build.0 = Debug|Win32
+		{4B3A292E-16E4-4663-BCF4-5891D31EEFEF}.Release|x64.ActiveCfg = Release|x64
+		{4B3A292E-16E4-4663-BCF4-5891D31EEFEF}.Release|x64.Build.0 = Release|x64
+		{4B3A292E-16E4-4663-BCF4-5891D31EEFEF}.Release|x86.ActiveCfg = Release|Win32
+		{4B3A292E-16E4-4663-BCF4-5891D31EEFEF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
