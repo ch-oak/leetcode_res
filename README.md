@@ -8,7 +8,7 @@ LeetCode Solution
 | ---- | ----------------------------------------------- | ---- | -------------------- | ----- |
 |      |                                                 |      |                      |       |
 |0021| [Merge Two Sorted Lists(合并两个有序链表)](https://leetcode.com/problems/merge-two-sorted-lists/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/0021.%20Merge%20Two%20Sorted%20Lists/0021.%20Merge%20Two%20Sorted%20Lists.cpp)|Linked List|Easy
-|0021| [Edit Distance(编辑距离)](https://leetcode.com/problems/edit-distance/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_hard/0072.%20Edit%20Distance/0072.%20Edit%20Distance.cpp)|String DP|Hard
+|0078| [Edit Distance(编辑距离)](https://leetcode.com/problems/edit-distance/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_hard/0072.%20Edit%20Distance/0072.%20Edit%20Distance.cpp)|String DP|Hard
 |0088| [Merge Sorted Array(合并两个有序数组)](https://leetcode.com/problems/merge-sorted-array/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/0088.%20Merge%20Sorted%20Array/0088.%20Merge%20Sorted%20Array.cpp)|Array Two Pointers|Easy
 |0102| [Binary Tree Level Order Traversalon1(二叉树的层序遍历)](https://leetcode.com/problems/reverse-linked-list/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/102.%20Binary%20Tree%20Level%20Order%20Traversalon1/102.%20Binary%20Tree%20Level%20Order%20Traversalon1.cpp)|Tree BFS|Medium
 |0206| [Reverse Linked List(反转链表)](https://leetcode.com/problems/reverse-linked-list/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/206.%20Reverse%20Linked%20List/206.%20Reverse%20Linked%20List.cpp)|Tree|Easy
