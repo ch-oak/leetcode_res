@@ -23,7 +23,7 @@
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="72. Edit Distance.cpp">
+    <ClCompile Include="0072. Edit Distance.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

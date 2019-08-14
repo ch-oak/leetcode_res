@@ -15,8 +15,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "52. N-Queens II", "52. N-Qu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "65. Valid Number", "65. Valid Number\65. Valid Number.vcxproj", "{131C2838-5564-4451-BEFC-2BEBACCFBC82}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "72. Edit Distance", "72. Edit Distance\72. Edit Distance.vcxproj", "{1CB56A07-F225-4467-8268-2624CBA5D1C9}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "76. Minimum Window Substring", "76. Minimum Window Substring\76. Minimum Window Substring.vcxproj", "{0183A485-858D-49D0-BE39-69771169AAC4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "84. Largest Rectangle in Histogram", "84. Largest Rectangle in Histogram\84. Largest Rectangle in Histogram.vcxproj", "{06B40C54-FF17-4A1F-B84C-A32AE975C2D4}"
@@ -44,6 +42,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0037. Sudoku Solver", "0037. Sudoku Solver\0037. Sudoku Solver.vcxproj", "{4C8CCC84-5FE1-4F59-B730-21489C539217}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0041. First Missing Positive", "0041. First Missing Positive\0041. First Missing Positive.vcxproj", "{3A027F60-51FF-4A30-B18F-AF7DFE0F96BE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0072. Edit Distance", "0072. Edit Distance\0072. Edit Distance.vcxproj", "{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,14 +101,6 @@ Global
 		{131C2838-5564-4451-BEFC-2BEBACCFBC82}.Release|x64.Build.0 = Release|x64
 		{131C2838-5564-4451-BEFC-2BEBACCFBC82}.Release|x86.ActiveCfg = Release|Win32
 		{131C2838-5564-4451-BEFC-2BEBACCFBC82}.Release|x86.Build.0 = Release|Win32
-		{1CB56A07-F225-4467-8268-2624CBA5D1C9}.Debug|x64.ActiveCfg = Debug|x64
-		{1CB56A07-F225-4467-8268-2624CBA5D1C9}.Debug|x64.Build.0 = Debug|x64
-		{1CB56A07-F225-4467-8268-2624CBA5D1C9}.Debug|x86.ActiveCfg = Debug|Win32
-		{1CB56A07-F225-4467-8268-2624CBA5D1C9}.Debug|x86.Build.0 = Debug|Win32
-		{1CB56A07-F225-4467-8268-2624CBA5D1C9}.Release|x64.ActiveCfg = Release|x64
-		{1CB56A07-F225-4467-8268-2624CBA5D1C9}.Release|x64.Build.0 = Release|x64
-		{1CB56A07-F225-4467-8268-2624CBA5D1C9}.Release|x86.ActiveCfg = Release|Win32
-		{1CB56A07-F225-4467-8268-2624CBA5D1C9}.Release|x86.Build.0 = Release|Win32
 		{0183A485-858D-49D0-BE39-69771169AAC4}.Debug|x64.ActiveCfg = Debug|x64
 		{0183A485-858D-49D0-BE39-69771169AAC4}.Debug|x64.Build.0 = Debug|x64
 		{0183A485-858D-49D0-BE39-69771169AAC4}.Debug|x86.ActiveCfg = Debug|Win32
@@ -221,6 +213,14 @@ Global
 		{3A027F60-51FF-4A30-B18F-AF7DFE0F96BE}.Release|x64.Build.0 = Release|x64
 		{3A027F60-51FF-4A30-B18F-AF7DFE0F96BE}.Release|x86.ActiveCfg = Release|Win32
 		{3A027F60-51FF-4A30-B18F-AF7DFE0F96BE}.Release|x86.Build.0 = Release|Win32
+		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Debug|x64.ActiveCfg = Debug|x64
+		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Debug|x64.Build.0 = Debug|x64
+		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Debug|x86.ActiveCfg = Debug|Win32
+		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Debug|x86.Build.0 = Debug|Win32
+		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Release|x64.ActiveCfg = Release|x64
+		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Release|x64.Build.0 = Release|x64
+		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Release|x86.ActiveCfg = Release|Win32
+		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

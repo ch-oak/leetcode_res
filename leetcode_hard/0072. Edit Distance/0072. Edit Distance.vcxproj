@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{1CB56A07-F225-4467-8268-2624CBA5D1C9}</ProjectGuid>
+    <ProjectGuid>{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My72EditDistance</RootNamespace>
+    <RootNamespace>My0072EditDistance</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,7 +154,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="72. Edit Distance.cpp" />
+    <ClCompile Include="0072. Edit Distance.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
