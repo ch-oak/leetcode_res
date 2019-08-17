@@ -7,6 +7,7 @@ LeetCode Solution
 | :--  | :---------------------------------------------: | :--: | :------------------- | :---: |
 | ---- | ----------------------------------------------- | ---- | -------------------- | ----- |
 |      |                                                 |      |                      |       |
+|0005| [Longest Palindromic Substring(最长回文子串)](https://leetcode.com/problems/longest-palindromic-substring/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/0021.%20Merge%20Two%20Sorted%20Lists/0021.%20Merge%20Two%20Sorted%20Lists.cpp)|String DP|Medium
 |0021| [Merge Two Sorted Lists(合并两个有序链表)](https://leetcode.com/problems/merge-two-sorted-lists/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/0021.%20Merge%20Two%20Sorted%20Lists/0021.%20Merge%20Two%20Sorted%20Lists.cpp)|Linked List|Easy
 |0046| [ Permutations(全排列)](https://leetcode.com/problems/permutations/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/46.%20Permutations/46.%20Permutations.cpp)|Back Tracking|Medium
 |0078| [Edit Distance(编辑距离)](https://leetcode.com/problems/edit-distance/) | [C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_hard/0072.%20Edit%20Distance/0072.%20Edit%20Distance.cpp)|String DP|Hard
