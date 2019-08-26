@@ -13,7 +13,7 @@ using namespace std;
 主要就是定义出这个数据结构：unordered_map<int, pair<int, list<int>::iterator>> cache;分别表示key，value，最近使用的key的链表
 也可以分成两个map，一个表示key,value 一个表示key,iterator
 查找：
-直接在map里查找key,O(1)，就找到了对应的value和key所在的链表的迭代器，删除该迭代器，将value插入到表头，更新value对应的迭代器为表头。
+	直接在map里查找key,O(1)，就找到了对应的value和key所在的链表的迭代器，删除该迭代器，将value插入到表头，更新value对应的迭代器为表头。
 插入：
 	存在key,将value更新，同时将与value相连的key放到表头，更新map
 	不存在key
