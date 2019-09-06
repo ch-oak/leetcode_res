@@ -22,6 +22,7 @@ LeetCode Solution
 |0283|[ Move Zeroes(移零到末尾）](https://leetcode.com/problems/move-zeroes/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/283.%20Move%20Zeroes/283.%20Move%20Zeroes.cpp)|Array Two_Pointers|Easy
 |0287|[ Find the Duplicate Number(找出重复数字(数字在1-n之间)）](https://leetcode.com/problems/find-the-duplicate-number/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/287.%20Find%20the%20Duplicate%20Number/287.%20Find%20the%20Duplicate%20Number.cpp)|Array Two_Pointers Binary_Search|Medium
 |0300|[ Longest Increasing Subsequence(最长递增子序列）](https://leetcode.com/problems/longest-increasing-subsequence/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/300.%20Longest%20Increasing%20Subsequence/300.%20Longest%20Increasing%20Subsequence.cpp)|Binary_Search DP|Medium
+|0315|[  Count of Smaller Numbers After Self(计算数组右边比当前数据小的数)](https://leetcode.com/problems/count-of-smaller-numbers-after-self/submissions/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_hard/0315.%20Count%20of%20Smaller%20Numbers%20After%20Self/0315.%20Count%20of%20Smaller%20Numbers%20After%20Self.cpp)|Binary Search Divide and Conquer Sort Binary Indexed Tree Segment Tree|Hard
 |0322|[ Coin Change(换零钱可能失败）](https://leetcode.com/problems/coin-change/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/322.%20Coin%20Change/322.%20Coin%20Change.cpp)|DP|Medium
 |0337|[ House Robber(不能抢劫相邻的二叉树节点)](https://leetcode.com/problems/house-robber-iii/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/337.%20House%20Robber%20III/337.%20House%20Robber%20III.cpp)|Tree DPS|Medium
 |0347|[ Top K Frequent Elements(出现次数最多的k个元素)](https://leetcode.com/problems/top-k-frequent-elements/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/347.%20Top%20K%20Frequent%20Elements/347.%20Top%20K%20Frequent%20Elements.cpp)|Hash_Table Heap|Medium
@@ -29,4 +30,5 @@ LeetCode Solution
 |0416|[ Partition Equal Subset Sum(平分数组)](https://leetcode.com/problems/partition-equal-subset-sum/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/416.%20Partition%20Equal%20Subset%20Sum/416.%20Partition%20Equal%20Subset%20Sum.cpp)|DP|Medium
 |0437|[  Path Sum III(和为指定值的路径数目)](https://leetcode.com/problems/path-sum-iii/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/437.%20Path%20Sum%20III/437.%20Path%20Sum%20III.cpp)|Tree|Easy
 |0438|[  Find All Anagrams in a String(找出所有异序次出现位置)](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[C++](https://github.com/ch-oak/leetcode_res/tree/master/leetcode_easy/438.%20Find%20All%20Anagrams%20in%20a%20String)|Hash Table|Easy
+
 
