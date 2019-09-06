@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0041. First Missing Positiv
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0072. Edit Distance", "0072. Edit Distance\0072. Edit Distance.vcxproj", "{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0315. Count of Smaller Numbers After Self", "0315. Count of Smaller Numbers After Self\0315. Count of Smaller Numbers After Self.vcxproj", "{E6784B68-1ECC-470C-8948-3F4B742076A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Release|x64.Build.0 = Release|x64
 		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Release|x86.ActiveCfg = Release|Win32
 		{5168FD70-69BB-48EE-B16F-8E4838DB4C3A}.Release|x86.Build.0 = Release|Win32
+		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Debug|x64.ActiveCfg = Debug|x64
+		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Debug|x64.Build.0 = Debug|x64
+		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Debug|x86.Build.0 = Debug|Win32
+		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Release|x64.ActiveCfg = Release|x64
+		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Release|x64.Build.0 = Release|x64
+		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Release|x86.ActiveCfg = Release|Win32
+		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
