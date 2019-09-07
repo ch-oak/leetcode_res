@@ -30,5 +30,6 @@ LeetCode Solution
 |0416|[ Partition Equal Subset Sum(平分数组)](https://leetcode.com/problems/partition-equal-subset-sum/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/416.%20Partition%20Equal%20Subset%20Sum/416.%20Partition%20Equal%20Subset%20Sum.cpp)|DP|Medium
 |0437|[  Path Sum III(和为指定值的路径数目)](https://leetcode.com/problems/path-sum-iii/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_easy/437.%20Path%20Sum%20III/437.%20Path%20Sum%20III.cpp)|Tree|Easy
 |0438|[  Find All Anagrams in a String(找出所有异序次出现位置)](https://leetcode.com/problems/find-all-anagrams-in-a-string/)|[C++](https://github.com/ch-oak/leetcode_res/tree/master/leetcode_easy/438.%20Find%20All%20Anagrams%20in%20a%20String)|Hash Table|Easy
+|0438|[  Daily Temperatures(下一个温暖的日子还有几天)](https://leetcode.com/problems/daily-temperatures/)|[C++](https://github.com/ch-oak/leetcode_res/blob/master/leetcode_medium/0739.%20Daily%20Temperatures/0739.%20Daily%20Temperatures.cpp)|Hash Table Stack|Medium
 
 
