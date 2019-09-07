@@ -47,6 +47,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0072. Edit Distance", "0072
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0315. Count of Smaller Numbers After Self", "0315. Count of Smaller Numbers After Self\0315. Count of Smaller Numbers After Self.vcxproj", "{E6784B68-1ECC-470C-8948-3F4B742076A4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0739. Daily Temperatures", "0739. Daily Temperatures\0739. Daily Temperatures.vcxproj", "{F1AF45C0-CC9D-45C1-BB6F-BA582CD7FD99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -231,6 +233,14 @@ Global
 		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Release|x64.Build.0 = Release|x64
 		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Release|x86.ActiveCfg = Release|Win32
 		{E6784B68-1ECC-470C-8948-3F4B742076A4}.Release|x86.Build.0 = Release|Win32
+		{F1AF45C0-CC9D-45C1-BB6F-BA582CD7FD99}.Debug|x64.ActiveCfg = Debug|x64
+		{F1AF45C0-CC9D-45C1-BB6F-BA582CD7FD99}.Debug|x64.Build.0 = Debug|x64
+		{F1AF45C0-CC9D-45C1-BB6F-BA582CD7FD99}.Debug|x86.ActiveCfg = Debug|Win32
+		{F1AF45C0-CC9D-45C1-BB6F-BA582CD7FD99}.Debug|x86.Build.0 = Debug|Win32
+		{F1AF45C0-CC9D-45C1-BB6F-BA582CD7FD99}.Release|x64.ActiveCfg = Release|x64
+		{F1AF45C0-CC9D-45C1-BB6F-BA582CD7FD99}.Release|x64.Build.0 = Release|x64
+		{F1AF45C0-CC9D-45C1-BB6F-BA582CD7FD99}.Release|x86.ActiveCfg = Release|Win32
+		{F1AF45C0-CC9D-45C1-BB6F-BA582CD7FD99}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
